@@ -1,7 +1,7 @@
 # Nexus EDGE — Enterprise IT Consulting & IT Services Platform
 
-[![GitHub Pages Deployment](https://github.com/vkchang39/nexus-edge-sample/actions/workflows/deploy.yml/badge.svg)](https://github.com/vkchang39/nexus-edge-sample/actions/workflows/deploy.yml)
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-00C853?style=flat-square&logo=github)](https://vkchang39.github.io/nexus-edge-sample/)
+[![GitHub Pages Deployment](https://img.shields.io/badge/Deployment-GitHub%20Pages%20Active-00C853?style=flat-square&logo=github)](https://vkchang39.github.io/nexus-edge-sample/)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-https%3A%2F%2Fvkchang39.github.io%2Fnexus--edge--sample%2F-60EFFF?style=flat-square)](https://vkchang39.github.io/nexus-edge-sample/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
 [![Vanilla JS](https://img.shields.io/badge/Built%20With-Vanilla%20JS%20%7C%20CSS3%20%7C%20HTML5-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 

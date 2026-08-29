@@ -1,0 +1,16 @@
+{
+  "name": "Nexus EDGE Consulting & IT Services",
+  "short_name": "Nexus EDGE",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#080C14",
+  "theme_color": "#00C853",
+  "description": "Enterprise IT Consulting, Tech Staffing, and Software Development Platform",
+  "icons": [
+    {
+      "src": "assets/logo-mark.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}

@@ -1,0 +1,3011 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexus EDGE | Consulting & IT Services</title>
+  <meta name="description" content="Nexus EDGE is a premier IT consulting and IT services partner — empowering enterprises to hire exceptional tech talent and build world-class software solutions.">
+  <meta name="keywords" content="IT Consulting, IT Services, Tech Staffing, Software Engineering, Talent Acquisition, Cloud Modernization, Nexus EDGE">
+  <link rel="icon" href="assets/logo-mark.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#00C853">
+
+  <!-- OpenGraph / Social Meta -->
+  <meta property="og:title" content="Nexus EDGE | Consulting & IT Services">
+  <meta property="og:description" content="Hire Exceptional Talent. Build Scalable Software. Accelerate Enterprise Growth with Nexus EDGE.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nexusedge.com">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Nexus EDGE Consulting & IT Services",
+    "alternateName": "Nexus EDGE",
+    "url": "https://nexusedge.com",
+    "logo": "https://nexusedge.com/assets/logo.svg",
+    "description": "Nexus EDGE is an enterprise IT consulting and IT services partner helping organizations hire elite tech talent and build custom software.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Level 12, Nexus Tower, Bandra Kurla Complex",
+      "addressLocality": "Mumbai",
+      "postalCode": "400051",
+      "addressCountry": "IN"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91 98765 43210",
+      "contactType": "Enterprise Sales & Consulting",
+      "email": "hello@nexusedge.com"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Top Scroll Progress Indicator -->
+  <div class="scroll-progress-bar" id="scroll-progress-bar"></div>
+
+  <!-- Atmospheric Glow & Mesh -->
+  <div class="mesh-bg">
+    <div class="mesh-blob mesh-blob-1"></div>
+    <div class="mesh-blob mesh-blob-2"></div>
+    <div class="mesh-grid"></div>
+  </div>
+
+  <!-- ==========================================================================
+       Header & Navigation
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <!-- Logo -->
+        <a href="#home" class="brand-link" data-route="home" aria-label="Nexus EDGE Home">
+          <img src="assets/logo.svg" class="brand-logo-img" alt="Nexus EDGE" draggable="false">
+        </a>
+
+        <!-- Desktop Menu -->
+        <nav class="nav-menu" aria-label="Main Navigation">
+          <a href="#about" class="nav-link" data-route="about">About</a>
+          <a href="#services" class="nav-link" data-route="services">Services</a>
+          <a href="#process" class="nav-link" data-route="process">Process</a>
+          <a href="#case-studies" class="nav-link" data-route="case-studies">Case&nbsp;Studies</a>
+          <a href="#careers" class="nav-link" data-route="careers">Careers</a>
+          <a href="#blog" class="nav-link" data-route="blog">Blog</a>
+          <a href="#contact" class="nav-link" data-route="contact">Contact</a>
+        </nav>
+
+        <!-- Actions -->
+        <div class="header-actions">
+          <!-- Currency Switcher -->
+          <div class="currency-selector-wrap" title="Select Display Currency">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="2" y1="12" x2="22" y2="12"/>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            <select id="global-currency-select" aria-label="Select Currency">
+              <option value="INR">INR (₹)</option>
+              <option value="USD">USD ($)</option>
+              <option value="EUR">EUR (€)</option>
+              <option value="GBP">GBP (£)</option>
+            </select>
+          </div>
+
+          <button class="btn btn-primary btn-sm btn-consult-header trigger-consultation">
+            Book Consultation
+          </button>
+
+          <button class="icon-btn menu-toggle-btn" id="menu-toggle" aria-label="Open Mobile Menu">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="3" y1="6" x2="21" y2="6"/>
+              <line x1="3" y1="12" x2="21" y2="12"/>
+              <line x1="3" y1="18" x2="21" y2="18"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation Drawer">
+    <div class="drawer-header">
+      <div class="brand-logo-wrap">
+        <img src="assets/logo.svg" class="brand-logo-img brand-logo-img--sm" alt="Nexus EDGE" draggable="false">
+      </div>
+      <button class="modal-close-btn" id="drawer-close" style="position: static;" aria-label="Close menu">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <div class="drawer-links">
+      <a href="#home" class="drawer-link" data-route="home">Home</a>
+      <a href="#about" class="drawer-link" data-route="about">About Us</a>
+      <a href="#services" class="drawer-link" data-route="services">Services</a>
+      <a href="#process" class="drawer-link" data-route="process">Our Process</a>
+      <a href="#case-studies" class="drawer-link" data-route="case-studies">Case Studies</a>
+      <a href="#careers" class="drawer-link" data-route="careers">Careers</a>
+      <a href="#blog" class="drawer-link" data-route="blog">Blog & Insights</a>
+      <a href="#contact" class="drawer-link" data-route="contact">Contact</a>
+    </div>
+    <div style="margin-top: 2rem;">
+      <button class="btn btn-primary trigger-consultation" style="width: 100%;">Book Consultation</button>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       Main Application Canvas
+       ========================================================================== -->
+  <main>
+
+    <!-- ==========================================================================
+         PAGE 1: HOME
+         ========================================================================== -->
+    <section class="page-section active" id="page-home">
+      <!-- Hero Section with Dynamic Canvas Particles -->
+      <div class="hero-section">
+        <canvas id="hero-particles-canvas"></canvas>
+        <div class="container">
+          <div class="hero-grid">
+            <div class="hero-content">
+              <div class="badge">
+                <span class="badge-dot"></span>
+                Consulting & IT Services · Trusted by 150+ Enterprises
+              </div>
+              <h1 class="hero-title">
+                Hire Talent. <span class="gradient-text">Build Software. Scale Faster.</span>
+              </h1>
+              <p class="hero-description">
+                Nexus EDGE helps enterprises hire exceptional tech minds and ship high-impact digital products — recruitment, HR advisory, bespoke software development, and dedicated engineering squads under one unified partner.
+              </p>
+              <div class="hero-cta-group">
+                <button type="button" class="btn btn-primary btn-lg trigger-hire-talent" id="hero-hire-talent-btn">
+                  Hire Talent
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+                <a href="#services" class="btn btn-outline btn-lg" data-route="services">
+                  Build Software
+                </a>
+                <button class="btn btn-secondary btn-lg trigger-consultation">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="color: var(--brand-green-500);">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                  </svg>
+                  Book Consultation
+                </button>
+              </div>
+              <div class="hero-stats-row">
+                <div class="stat-item">
+                  <div class="stat-value stat-counter" data-target="3000" data-suffix="+">3,000+</div>
+                  <div class="stat-label">Senior Placements</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-value stat-counter" data-target="200" data-suffix="+">200+</div>
+                  <div class="stat-label">Software Projects</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-value stat-counter" data-target="45" data-suffix="%">45%</div>
+                  <div class="stat-label">Faster Time-to-Hire</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Enterprise SVG Vector Client Marquee -->
+      <section class="marquee-section">
+        <div class="container">
+          <div class="marquee-title">Trusted by 150+ Leading Organizations Across 23 Verticals</div>
+        </div>
+        <div class="marquee-track-wrap">
+          <div class="marquee-track">
+            <div class="client-logo-item" title="Tata Group">
+              <img src="assets/clients/tata.svg" alt="Tata Group Logo" class="client-logo-img">
+            </div>
+            <div class="client-logo-item" title="Infosys">
+              <img src="assets/clients/infosys.svg" alt="Infosys Logo" class="client-logo-img">
+            </div>
+            <div class="client-logo-item" title="Wipro">
+              <img src="assets/clients/wipro.svg" alt="Wipro Logo" class="client-logo-img">
+            </div>
+            <div class="client-logo-item" title="HDFC Bank">
+              <img src="assets/clients/hdfc.svg" alt="HDFC Bank Logo" class="client-logo-img">
+            </div>
+            <div class="client-logo-item" title="ICICI Bank">
+              <img src="assets/clients/icici.svg" alt="ICICI Bank Logo" class="client-logo-img">
+            </div>
+            <div class="client-logo-item" title="Reliance">
+              <img src="assets/clients/reliance.svg" alt="Reliance Logo" class="client-logo-img">
+            </div>
+            <div class="client-logo-item" title="Mahindra">
+              <img src="assets/clients/mahindra.svg" alt="Mahindra Logo" class="client-logo-img">
+            </div>
+            <div class="client-logo-item" title="Larsen & Toubro">
+              <img src="assets/clients/lt.svg" alt="Larsen & Toubro Logo" class="client-logo-img">
+            </div>
+            <div class="client-logo-item" title="Flipkart">
+              <img src="assets/clients/flipkart.svg" alt="Flipkart Logo" class="client-logo-img">
+            </div>
+            <div class="client-logo-item" title="Amazon">
+              <img src="assets/clients/amazon.svg" alt="Amazon Logo" class="client-logo-img">
+            </div>
+            <div class="client-logo-item" title="PhonePe">
+              <img src="assets/clients/phonepe.svg" alt="PhonePe Logo" class="client-logo-img">
+            </div>
+            <div class="client-logo-item" title="Razorpay">
+              <img src="assets/clients/razorpay.svg" alt="Razorpay Logo" class="client-logo-img">
+            </div>
+            <div class="client-logo-item" title="Swiggy">
+              <img src="assets/clients/swiggy.svg" alt="Swiggy Logo" class="client-logo-img">
+            </div>
+            <div class="client-logo-item" title="Zomato">
+              <img src="assets/clients/zomato.svg" alt="Zomato Logo" class="client-logo-img">
+            </div>
+            <div class="client-logo-item" title="Freshworks">
+              <img src="assets/clients/freshworks.svg" alt="Freshworks Logo" class="client-logo-img">
+            </div>
+            <div class="client-logo-item" title="Ola">
+              <img src="assets/clients/ola.svg" alt="Ola Logo" class="client-logo-img">
+            </div>
+            <div class="client-logo-item" title="Dr. Reddy's">
+              <img src="assets/clients/drreddys.svg" alt="Dr. Reddy's Logo" class="client-logo-img">
+            </div>
+            <div class="client-logo-item" title="Sun Pharma">
+              <img src="assets/clients/sunpharma.svg" alt="Sun Pharma Logo" class="client-logo-img">
+            </div>
+            <div class="client-logo-item" title="Asian Paints">
+              <img src="assets/clients/asianpaints.svg" alt="Asian Paints Logo" class="client-logo-img">
+            </div>
+
+            <!-- Loop duplicates for seamless continuous marquee -->
+            <div class="client-logo-item" title="Tata Group">
+              <img src="assets/clients/tata.svg" alt="Tata Group Logo" class="client-logo-img">
+            </div>
+            <div class="client-logo-item" title="Infosys">
+              <img src="assets/clients/infosys.svg" alt="Infosys Logo" class="client-logo-img">
+            </div>
+            <div class="client-logo-item" title="Wipro">
+              <img src="assets/clients/wipro.svg" alt="Wipro Logo" class="client-logo-img">
+            </div>
+            <div class="client-logo-item" title="HDFC Bank">
+              <img src="assets/clients/hdfc.svg" alt="HDFC Bank Logo" class="client-logo-img">
+            </div>
+            <div class="client-logo-item" title="ICICI Bank">
+              <img src="assets/clients/icici.svg" alt="ICICI Bank Logo" class="client-logo-img">
+            </div>
+            <div class="client-logo-item" title="Reliance">
+              <img src="assets/clients/reliance.svg" alt="Reliance Logo" class="client-logo-img">
+            </div>
+            <div class="client-logo-item" title="Mahindra">
+              <img src="assets/clients/mahindra.svg" alt="Mahindra Logo" class="client-logo-img">
+            </div>
+            <div class="client-logo-item" title="Flipkart">
+              <img src="assets/clients/flipkart.svg" alt="Flipkart Logo" class="client-logo-img">
+            </div>
+            <div class="client-logo-item" title="Amazon">
+              <img src="assets/clients/amazon.svg" alt="Amazon Logo" class="client-logo-img">
+            </div>
+            <div class="client-logo-item" title="Razorpay">
+              <img src="assets/clients/razorpay.svg" alt="Razorpay Logo" class="client-logo-img">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Specialized Workforce & Talent Solutions Horizontal Scroll Showcase -->
+      <section class="services-carousel-section" id="talent-solutions-carousel">
+        <div class="container">
+          <div class="carousel-header-row">
+            <div class="carousel-header-left">
+              <div class="badge" style="margin-bottom: 0.5rem;"><span class="badge-dot"></span> Talent & Workforce Ecosystem</div>
+              <h2>Comprehensive <span class="gradient-text">Workforce & Career Solutions</span></h2>
+              <p>Explore our specialized recruitment, talent advisory, career acceleration, and compliant operational services designed for modern enterprises and top tech talent.</p>
+            </div>
+            <div class="carousel-nav-btns">
+              <button id="carousel-prev-btn" class="carousel-ctrl-btn" aria-label="Previous Slide">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+              </button>
+              <button id="carousel-next-btn" class="carousel-ctrl-btn" aria-label="Next Slide">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="horizontal-scroll-container" id="services-horizontal-track">
+          <!-- Card 1: Resume Building -->
+            <div class="horizontal-service-card">
+              <div class="card-top-group">
+                <div class="card-icon-wrap">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                    <polyline points="10 9 9 9 8 9"></polyline>
+                  </svg>
+                </div>
+                <h3>Resume Building</h3>
+                <p>Level up your profile with expertly crafted, ATS-optimized executive & technical resumes built by senior industry leaders.</p>
+              </div>
+              <div class="card-link-wrap">
+                <a href="#services" class="card-find-more" data-route="services">
+                  Find Out More
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 2: Job Search & Placement -->
+            <div class="horizontal-service-card">
+              <div class="card-top-group">
+                <div class="card-icon-wrap">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    <line x1="11" y1="8" x2="11" y2="14"></line>
+                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                  </svg>
+                </div>
+                <h3>Job Search & Placement</h3>
+                <p>We connect you with top opportunities that fit your strengths across Fortune 500 enterprises and hyper-growth unicorns.</p>
+              </div>
+              <div class="card-link-wrap">
+                <a href="#services" class="card-find-more" data-route="services">
+                  Find Out More
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 3: Training & Development -->
+            <div class="horizontal-service-card">
+              <div class="card-top-group">
+                <div class="card-icon-wrap">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                  </svg>
+                </div>
+                <h3>Training & Development</h3>
+                <p>Grow your skills and confidence for long-term career success with targeted cloud, AI, and leadership training programs.</p>
+              </div>
+              <div class="card-link-wrap">
+                <a href="#services" class="card-find-more" data-route="services">
+                  Find Out More
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 4: Job Placement & Career Support -->
+            <div class="horizontal-service-card">
+              <div class="card-top-group">
+                <div class="card-icon-wrap">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                  </svg>
+                </div>
+                <h3>Job Placement & Career Support</h3>
+                <p>Unlock your career potential with our personalized placement solutions. We align your strengths with top companies to ensure the best professional fit.</p>
+              </div>
+              <div class="card-link-wrap">
+                <a href="#services" class="card-find-more" data-route="services">
+                  Find Out More
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 5: Recruitment Services -->
+            <div class="horizontal-service-card">
+              <div class="card-top-group">
+                <div class="card-icon-wrap">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div>
+                <h3>Recruitment Services</h3>
+                <p>Streamline your talent search. We source, assess, and recommend top candidates to meet your organization's unique needs and culture.</p>
+              </div>
+              <div class="card-link-wrap">
+                <a href="#services" class="card-find-more" data-route="services">
+                  Find Out More
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 6: IT Consulting -->
+            <div class="horizontal-service-card">
+              <div class="card-top-group">
+                <div class="card-icon-wrap">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                </div>
+                <h3>IT Consulting</h3>
+                <p>Optimize your business with our IT talent and consulting services. We match skilled professionals to your technical requirements and ongoing digital initiatives.</p>
+              </div>
+              <div class="card-link-wrap">
+                <a href="#services" class="card-find-more" data-route="services">
+                  Find Out More
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 7: Payroll Management -->
+            <div class="horizontal-service-card">
+              <div class="card-top-group">
+                <div class="card-icon-wrap">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                    <line x1="1" y1="10" x2="23" y2="10"></line>
+                  </svg>
+                </div>
+                <h3>Payroll Management</h3>
+                <p>Leave your payroll complexities to us. Our reliable payroll solutions ensure compliance, accuracy, and peace of mind every single pay cycle.</p>
+              </div>
+              <div class="card-link-wrap">
+                <a href="#services" class="card-find-more" data-route="services">
+                  Find Out More
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 8: Background Verification -->
+            <div class="horizontal-service-card">
+              <div class="card-top-group">
+                <div class="card-icon-wrap">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    <polyline points="9 12 11 14 15 10"></polyline>
+                  </svg>
+                </div>
+                <h3>Background Verification</h3>
+                <p>Trust your hires with confidence. Our thorough background verification services help you onboard genuine and qualified professionals safely.</p>
+              </div>
+              <div class="card-link-wrap">
+                <a href="#services" class="card-find-more" data-route="services">
+                  Find Out More
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Dot Pagination -->
+          <div class="carousel-dots-wrap" id="carousel-dots-wrap">
+            <span class="carousel-dot active" data-slide="0"></span>
+            <span class="carousel-dot" data-slide="1"></span>
+<span class="carousel-dot" data-slide="2"></span>
+            <span class="carousel-dot" data-slide="3"></span>
+            <span class="carousel-dot" data-slide="4"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+           Fluid Ribbon Accordion Deck: Solving Complex Challenges Across 12 Industries
+           ========================================================================== -->
+      <section class="industries-showcase-section" id="industries-section">
+        <div class="container">
+          <div class="section-header-row" style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem;">
+            <div>
+              <div class="badge" style="margin-bottom: 0.75rem;"><span class="badge-dot"></span> Domain Mastery</div>
+              <h2>Solving Complex Challenges <span class="gradient-text">Across 12 Major Industries</span></h2>
+              <p style="max-width: 680px; margin: 0;">Hover or tap any vertical to explore domain architectures, real-time SLAs, compliance standards, and dedicated engineering squads.</p>
+            </div>
+            <!-- Slider Navigation Buttons -->
+            <div class="ribbon-nav-controls" style="display: flex; gap: 0.5rem;">
+              <button type="button" class="ribbon-ctrl-btn" id="ribbon-prev-btn" aria-label="Previous Industry">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+              </button>
+              <button type="button" class="ribbon-ctrl-btn" id="ribbon-next-btn" aria-label="Next Industry">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Industry Category Filter Tabs -->
+          <div class="app-industry-filter-bar">
+            <button type="button" class="app-filter-btn active" data-filter="all">All Industries (12)</button>
+            <button type="button" class="app-filter-btn" data-filter="fintech">FinTech & BFSI</button>
+            <button type="button" class="app-filter-btn" data-filter="health-ed">Healthcare & EdTech</button>
+            <button type="button" class="app-filter-btn" data-filter="enterprise">Enterprise & Retail</button>
+            <button type="button" class="app-filter-btn" data-filter="mobility">Mobility & InsurTech</button>
+                  <!-- Fluid Ribbon Accordion Deck -->
+          <div class="ribbon-deck-container" id="ribbon-deck-track">
+
+            <!-- 01 · FinTech -->
+            <div class="ribbon-card active" data-cat="fintech" data-industry="FinTech">
+              <div class="ribbon-collapsed-view">
+                <div class="ribbon-watermark">01</div>
+                <div class="ribbon-icon-wrap">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="5" y="2" width="14" height="20" rx="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                </div>
+                <div class="ribbon-vertical-label">01 · FinTech & Payments</div>
+                <div class="ribbon-dot-indicator" style="background: #00FF87;"></div>
+              </div>
+              <div class="ribbon-expanded-content">
+                <div class="ribbon-expanded-top">
+                  <div class="ribbon-header-meta">
+                    <span class="ribbon-badge-tag">01 · FinTech</span>
+                    <span class="ribbon-sla-pill">50k+ TPS Scaled</span>
+                  </div>
+                  <h3 class="ribbon-card-title">Payment Switches & UPI Rails</h3>
+                  <div class="ribbon-challenge-tag">Complex Challenge: High-Concurrency Double-Entry Ledgers</div>
+                  <p class="ribbon-card-desc">
+                    We scale high-throughput payment switches, UPI gateways, multi-currency double-entry ledger engines, and sub-10ms fraud mitigation pipelines.
+                  </p>
+                  <div class="ribbon-metrics-grid">
+                    <div class="ribbon-metric-box">
+                      <div class="ribbon-metric-val">50,000+</div>
+                      <div class="ribbon-metric-lbl">Transactions / Sec</div>
+                    </div>
+                    <div class="ribbon-metric-box">
+                      <div class="ribbon-metric-val">99.99%</div>
+                      <div class="ribbon-metric-lbl">Reconciliation Accuracy</div>
+                    </div>
+                  </div>
+                  <div class="ribbon-tech-pills">
+                    <span>Golang</span>
+                    <span>Apache Kafka</span>
+                    <span>PCI-DSS</span>
+                    <span>CockroachDB</span>
+                  </div>
+                </div>
+                <div class="ribbon-expanded-bottom">
+                  <button type="button" class="btn btn-primary btn-sm trigger-hire-talent" data-industry="FinTech" style="width: 100%;">
+                    Deploy FinTech Squad &rarr;
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 02 · Healthcare -->
+            <div class="ribbon-card" data-cat="health-ed" data-industry="Healthcare">
+              <div class="ribbon-collapsed-view">
+                <div class="ribbon-watermark">02</div>
+                <div class="ribbon-icon-wrap">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </div>
+                <div class="ribbon-vertical-label">02 · Healthcare & Telehealth</div>
+                <div class="ribbon-dot-indicator" style="background: #34D399;"></div>
+              </div>
+              <div class="ribbon-expanded-content">
+                <div class="ribbon-expanded-top">
+                  <div class="ribbon-header-meta">
+                    <span class="ribbon-badge-tag">02 · Healthcare</span>
+                    <span class="ribbon-sla-pill">HIPAA & FDA Verified</span>
+                  </div>
+                  <h3 class="ribbon-card-title">FHIR Telehealth & Diagnostic AI</h3>
+                  <div class="ribbon-challenge-tag">Complex Challenge: Clinical Interoperability & Zero-Trust EHR</div>
+                  <p class="ribbon-card-desc">
+                    Strict HIPAA/GDPR-compliant EHR data exchanges, real-time diagnostic video telemetry, and FDA Part 11 compliant clinical trial data platforms.
+                  </p>
+                  <div class="ribbon-metrics-grid">
+                    <div class="ribbon-metric-box">
+                      <div class="ribbon-metric-val">100%</div>
+                      <div class="ribbon-metric-lbl">HIPAA & SOC-2 Verified</div>
+                    </div>
+                    <div class="ribbon-metric-box">
+                      <div class="ribbon-metric-val">60%</div>
+                      <div class="ribbon-metric-lbl">Faster Clinical Intake</div>
+                    </div>
+                  </div>
+                  <div class="ribbon-tech-pills">
+                    <span>HL7 / FHIR</span>
+                    <span>WebRTC</span>
+                    <span>AWS HealthLake</span>
+                    <span>Python AI</span>
+                  </div>
+                </div>
+                <div class="ribbon-expanded-bottom">
+                  <button type="button" class="btn btn-primary btn-sm trigger-hire-talent" data-industry="Healthcare" style="width: 100%;">
+                    Deploy Healthcare Squad &rarr;
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 03 · Finance -->
+            <div class="ribbon-card" data-cat="fintech" data-industry="Finance">
+              <div class="ribbon-collapsed-view">
+                <div class="ribbon-watermark">03</div>
+                <div class="ribbon-icon-wrap">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                </div>
+                <div class="ribbon-vertical-label">03 · Finance & Quant Trading</div>
+                <div class="ribbon-dot-indicator" style="background: #60EFFF;"></div>
+              </div>
+              <div class="ribbon-expanded-content">
+                <div class="ribbon-expanded-top">
+                  <div class="ribbon-header-meta">
+                    <span class="ribbon-badge-tag">03 · Finance</span>
+                    <span class="ribbon-sla-pill">10-Day SLA</span>
+                  </div>
+                  <h3 class="ribbon-card-title">Capital Markets & Low Latency</h3>
+                  <div class="ribbon-challenge-tag">Complex Challenge: Microsecond Order Matching & Quant Risk</div>
+                  <p class="ribbon-card-desc">
+                    We engineer microsecond-latency exchange matching engines, quantitative risk analysis models, and high-frequency trading pipelines using modern Rust and C++20.
+                  </p>
+                  <div class="ribbon-metrics-grid">
+                    <div class="ribbon-metric-box">
+                      <div class="ribbon-metric-val">&lt; 5ms</div>
+                      <div class="ribbon-metric-lbl">Order Matching Latency</div>
+                    </div>
+                    <div class="ribbon-metric-box">
+                      <div class="ribbon-metric-val">99.999%</div>
+                      <div class="ribbon-metric-lbl">Uptime SLA</div>
+                    </div>
+                  </div>
+                  <div class="ribbon-tech-pills">
+                    <span>Rust</span>
+                    <span>C++20</span>
+                    <span>Apache Kafka</span>
+                    <span>TimescaleDB</span>
+                  </div>
+                </div>
+                <div class="ribbon-expanded-bottom">
+                  <button type="button" class="btn btn-primary btn-sm trigger-hire-talent" data-industry="Finance" style="width: 100%;">
+                    Deploy Finance Squad &rarr;
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 04 · BFSI -->
+            <div class="ribbon-card" data-cat="fintech" data-industry="BFSI">
+              <div class="ribbon-collapsed-view">
+                <div class="ribbon-watermark">04</div>
+                <div class="ribbon-icon-wrap">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="3" y1="21" x2="21" y2="21"></line><line x1="3" y1="10" x2="21" y2="10"></line><polyline points="5 6 12 3 19 6"></polyline></svg>
+                </div>
+                <div class="ribbon-vertical-label">04 · BFSI Core Banking</div>
+                <div class="ribbon-dot-indicator" style="background: #38BDF8;"></div>
+              </div>
+              <div class="ribbon-expanded-content">
+                <div class="ribbon-expanded-top">
+                  <div class="ribbon-header-meta">
+                    <span class="ribbon-badge-tag">04 · BFSI</span>
+                    <span class="ribbon-sla-pill">Zero-Downtime</span>
+                  </div>
+                  <h3 class="ribbon-card-title">Core Modernization & ISO 20022</h3>
+                  <div class="ribbon-challenge-tag">Complex Challenge: Mainframe Decoupling & Real-Time Settlement</div>
+                  <p class="ribbon-card-desc">
+                    Migrating brittle banking mainframes to event-driven Go microservices, implementing ISO 20022 messaging, zero-trust authentication, and fraud analytics.
+                  </p>
+                  <div class="ribbon-metrics-grid">
+                    <div class="ribbon-metric-box">
+                      <div class="ribbon-metric-val">0-Downtime</div>
+                      <div class="ribbon-metric-lbl">Core Migration Standard</div>
+                    </div>
+                    <div class="ribbon-metric-box">
+                      <div class="ribbon-metric-val">12+</div>
+                      <div class="ribbon-metric-lbl">Countries Deployed</div>
+                    </div>
+                  </div>
+                  <div class="ribbon-tech-pills">
+                    <span>ISO 20022</span>
+                    <span>Kubernetes</span>
+                    <span>Golang</span>
+                    <span>Vault Mesh</span>
+                  </div>
+                </div>
+                <div class="ribbon-expanded-bottom">
+                  <button type="button" class="btn btn-primary btn-sm trigger-hire-talent" data-industry="BFSI" style="width: 100%;">
+                    Deploy BFSI Squad &rarr;
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 05 · Real Estate -->
+            <div class="ribbon-card" data-cat="enterprise" data-industry="Real Estate">
+              <div class="ribbon-collapsed-view">
+                <div class="ribbon-watermark">05</div>
+                <div class="ribbon-icon-wrap">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="4" y="2" width="16" height="20" rx="2"></rect><line x1="9" y1="22" x2="9" y2="22.01"></line><line x1="15" y1="22" x2="15" y2="22.01"></line></svg>
+                </div>
+                <div class="ribbon-vertical-label">05 · PropTech & Assets</div>
+                <div class="ribbon-dot-indicator" style="background: #A78BFA;"></div>
+              </div>
+              <div class="ribbon-expanded-content">
+                <div class="ribbon-expanded-top">
+                  <div class="ribbon-header-meta">
+                    <span class="ribbon-badge-tag">05 · Real Estate</span>
+                    <span class="ribbon-sla-pill">PropTech Lead</span>
+                  </div>
+                  <h3 class="ribbon-card-title">AVM Valuation & 3D Spatial IoT</h3>
+                  <div class="ribbon-challenge-tag">Complex Challenge: Automated Asset Valuation & Portfolio Sync</div>
+                  <p class="ribbon-card-desc">
+                    Automated valuation models (AVM), 3D spatial mapping digital twins, multi-tenant property platforms, and smart contract escrow workflows.
+                  </p>
+                  <div class="ribbon-metrics-grid">
+                    <div class="ribbon-metric-box">
+                      <div class="ribbon-metric-val">Real-Time</div>
+                      <div class="ribbon-metric-lbl">Algorithmic Valuation</div>
+                    </div>
+                    <div class="ribbon-metric-box">
+                      <div class="ribbon-metric-val">40k+</div>
+                      <div class="ribbon-metric-lbl">Assets Managed</div>
+                    </div>
+                  </div>
+                  <div class="ribbon-tech-pills">
+                    <span>Spatial 3D</span>
+                    <span>AVM AI</span>
+                    <span>PostgreSQL</span>
+                    <span>React</span>
+                  </div>
+                </div>
+                <div class="ribbon-expanded-bottom">
+                  <button type="button" class="btn btn-primary btn-sm trigger-hire-talent" data-industry="Real Estate" style="width: 100%;">
+                    Deploy PropTech Squad &rarr;
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 06 · FMCG -->
+            <div class="ribbon-card" data-cat="enterprise" data-industry="FMCG">
+              <div class="ribbon-collapsed-view">
+                <div class="ribbon-watermark">06</div>
+                <div class="ribbon-icon-wrap">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line></svg>
+                </div>
+                <div class="ribbon-vertical-label">06 · FMCG & Supply Chain</div>
+                <div class="ribbon-dot-indicator" style="background: #FBBF24;"></div>
+              </div>
+              <div class="ribbon-expanded-content">
+                <div class="ribbon-expanded-top">
+                  <div class="ribbon-header-meta">
+                    <span class="ribbon-badge-tag">06 · FMCG</span>
+                    <span class="ribbon-sla-pill">Omnichannel Scale</span>
+                  </div>
+                  <h3 class="ribbon-card-title">Predictive AI Replenishment</h3>
+                  <div class="ribbon-challenge-tag">Complex Challenge: Multi-Node Distributor Synchronization</div>
+                  <p class="ribbon-card-desc">
+                    Predictive inventory replenishment algorithms, real-time distributor synchronization, automated warehouse IoT, and omnichannel retail platforms.
+                  </p>
+                  <div class="ribbon-metrics-grid">
+                    <div class="ribbon-metric-box">
+                      <div class="ribbon-metric-val">99.4%</div>
+                      <div class="ribbon-metric-lbl">Forecast Accuracy</div>
+                    </div>
+                    <div class="ribbon-metric-box">
+                      <div class="ribbon-metric-val">22%</div>
+                      <div class="ribbon-metric-lbl">Conversion Lift</div>
+                    </div>
+                  </div>
+                  <div class="ribbon-tech-pills">
+                    <span>Demand AI</span>
+                    <span>IoT Telemetry</span>
+                    <span>Redis Enterprise</span>
+                    <span>Node.js</span>
+                  </div>
+                </div>
+                <div class="ribbon-expanded-bottom">
+                  <button type="button" class="btn btn-primary btn-sm trigger-hire-talent" data-industry="FMCG" style="width: 100%;">
+                    Deploy FMCG Squad &rarr;
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 07 · EdTech -->
+            <div class="ribbon-card" data-cat="health-ed" data-industry="EdTech">
+              <div class="ribbon-collapsed-view">
+                <div class="ribbon-watermark">07</div>
+                <div class="ribbon-icon-wrap">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                </div>
+                <div class="ribbon-vertical-label">07 · EdTech & Live Video</div>
+                <div class="ribbon-dot-indicator" style="background: #F472B6;"></div>
+              </div>
+              <div class="ribbon-expanded-content">
+                <div class="ribbon-expanded-top">
+                  <div class="ribbon-header-meta">
+                    <span class="ribbon-badge-tag">07 · EdTech</span>
+                    <span class="ribbon-sla-pill">100k+ Concurrency</span>
+                  </div>
+                  <h3 class="ribbon-card-title">Interactive Live Classrooms</h3>
+                  <div class="ribbon-challenge-tag">Complex Challenge: Sub-50ms Video Streams & Anti-Cheat AI</div>
+                  <p class="ribbon-card-desc">
+                    Sub-50ms interactive live video classrooms, AI-driven adaptive learning paths, automated proctoring engines, and gamified LMS ecosystems.
+                  </p>
+                  <div class="ribbon-metrics-grid">
+                    <div class="ribbon-metric-box">
+                      <div class="ribbon-metric-val">100k+</div>
+                      <div class="ribbon-metric-lbl">Live Concurrency</div>
+                    </div>
+                    <div class="ribbon-metric-box">
+                      <div class="ribbon-metric-val">&lt; 50ms</div>
+                      <div class="ribbon-metric-lbl">Video Latency</div>
+                    </div>
+                  </div>
+                  <div class="ribbon-tech-pills">
+                    <span>WebRTC Media</span>
+                    <span>React / Next.js</span>
+                    <span>Redis Cluster</span>
+                    <span>FERPA Safe</span>
+                  </div>
+                </div>
+                <div class="ribbon-expanded-bottom">
+                  <button type="button" class="btn btn-primary btn-sm trigger-hire-talent" data-industry="EdTech" style="width: 100%;">
+                    Deploy EdTech Squad &rarr;
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 08 · Automobile -->
+            <div class="ribbon-card" data-cat="mobility" data-industry="Automobile">
+              <div class="ribbon-collapsed-view">
+                <div class="ribbon-watermark">08</div>
+                <div class="ribbon-icon-wrap">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="11" width="18" height="8" rx="2"></rect><path d="M5 11l2-5h10l2 5"></path><circle cx="7.5" cy="16.5" r="1.5"></circle><circle cx="16.5" cy="16.5" r="1.5"></circle></svg>
+                </div>
+                <div class="ribbon-vertical-label">08 · EV & Connected Auto</div>
+                <div class="ribbon-dot-indicator" style="background: #F87171;"></div>
+              </div>
+              <div class="ribbon-expanded-content">
+                <div class="ribbon-expanded-top">
+                  <div class="ribbon-header-meta">
+                    <span class="ribbon-badge-tag">08 · Automobile</span>
+                    <span class="ribbon-sla-pill">1M+ IoT Scale</span>
+                  </div>
+                  <h3 class="ribbon-card-title">CAN-bus & EV Telematics</h3>
+                  <div class="ribbon-challenge-tag">Complex Challenge: High-Frequency CAN Telemetry & Battery AI</div>
+                  <p class="ribbon-card-desc">
+                    Connected vehicle IoT pipelines, real-time battery health analytics, predictive fleet maintenance, and dealer enterprise software processing millions of events.
+                  </p>
+                  <div class="ribbon-metrics-grid">
+                    <div class="ribbon-metric-box">
+                      <div class="ribbon-metric-val">1M+</div>
+                      <div class="ribbon-metric-lbl">Connected Vehicles</div>
+                    </div>
+                    <div class="ribbon-metric-box">
+                      <div class="ribbon-metric-val">Sub-Sec</div>
+                      <div class="ribbon-metric-lbl">Fleet Alert Latency</div>
+                    </div>
+                  </div>
+                  <div class="ribbon-tech-pills">
+                    <span>Embedded C++</span>
+                    <span>MQTT / EMQX</span>
+                    <span>AWS IoT Core</span>
+                    <span>AUTOSAR</span>
+                  </div>
+                </div>
+                <div class="ribbon-expanded-bottom">
+                  <button type="button" class="btn btn-primary btn-sm trigger-hire-talent" data-industry="Automobile" style="width: 100%;">
+                    Deploy Auto Squad &rarr;
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 09 · BPO -->
+            <div class="ribbon-card" data-cat="enterprise" data-industry="BPO">
+              <div class="ribbon-collapsed-view">
+                <div class="ribbon-watermark">09</div>
+                <div class="ribbon-icon-wrap">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
+                </div>
+                <div class="ribbon-vertical-label">09 · Voice AI & BPO</div>
+                <div class="ribbon-dot-indicator" style="background: #818CF8;"></div>
+              </div>
+              <div class="ribbon-expanded-content">
+                <div class="ribbon-expanded-top">
+                  <div class="ribbon-header-meta">
+                    <span class="ribbon-badge-tag">09 · BPO</span>
+                    <span class="ribbon-sla-pill">68% AI Deflection</span>
+                  </div>
+                  <h3 class="ribbon-card-title">Voice LLMs & Omnichannel AI</h3>
+                  <div class="ribbon-challenge-tag">Complex Challenge: Sub-300ms Conversational Voice Agents</div>
+                  <p class="ribbon-card-desc">
+                    Conversational Voice AI agents, automated omnichannel routing, workforce management schedulers, and real-time sentiment analytics to optimize contact center costs.
+                  </p>
+                  <div class="ribbon-metrics-grid">
+                    <div class="ribbon-metric-box">
+                      <div class="ribbon-metric-val">68%</div>
+                      <div class="ribbon-metric-lbl">First-Call AI Deflection</div>
+                    </div>
+                    <div class="ribbon-metric-box">
+                      <div class="ribbon-metric-val">&lt; 300ms</div>
+                      <div class="ribbon-metric-lbl">Voice Bot Latency</div>
+                    </div>
+                  </div>
+                  <div class="ribbon-tech-pills">
+                    <span>Voice LLMs</span>
+                    <span>WebSockets</span>
+                    <span>CTI Telephony</span>
+                    <span>Python</span>
+                  </div>
+                </div>
+                <div class="ribbon-expanded-bottom">
+                  <button type="button" class="btn btn-primary btn-sm trigger-hire-talent" data-industry="BPO" style="width: 100%;">
+                    Deploy Voice AI Squad &rarr;
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 10 · NBFC -->
+            <div class="ribbon-card" data-cat="fintech" data-industry="NBFC">
+              <div class="ribbon-collapsed-view">
+                <div class="ribbon-watermark">10</div>
+                <div class="ribbon-icon-wrap">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 12V8H6a2 2 0 0 1-2-2c0-1.1.9-2 2-2h12v4"></path><path d="M4 6v12c0 1.1.9 2 2 2h14v-4"></path></svg>
+                </div>
+                <div class="ribbon-vertical-label">10 · NBFC & Lending</div>
+                <div class="ribbon-dot-indicator" style="background: #2DD4BF;"></div>
+              </div>
+              <div class="ribbon-expanded-content">
+                <div class="ribbon-expanded-top">
+                  <div class="ribbon-header-meta">
+                    <span class="ribbon-badge-tag">10 · NBFC</span>
+                    <span class="ribbon-sla-pill">Instant Disbursal</span>
+                  </div>
+                  <h3 class="ribbon-card-title">Digital LOS & Credit Scoring</h3>
+                  <div class="ribbon-challenge-tag">Complex Challenge: Alternative Data Underwriting & Collections</div>
+                  <p class="ribbon-card-desc">
+                    Automated loan origination systems (LOS), alternative data risk underwriting engines, instant digital credit scoring models, and automated collections workflows.
+                  </p>
+                  <div class="ribbon-metrics-grid">
+                    <div class="ribbon-metric-box">
+                      <div class="ribbon-metric-val">3 Mins</div>
+                      <div class="ribbon-metric-lbl">Instant Digital Approval</div>
+                    </div>
+                    <div class="ribbon-metric-box">
+                      <div class="ribbon-metric-val">4.2x</div>
+                      <div class="ribbon-metric-lbl">Underwriting Velocity</div>
+                    </div>
+                  </div>
+                  <div class="ribbon-tech-pills">
+                    <span>Credit Risk AI</span>
+                    <span>Microservices</span>
+                    <span>eNACH Rails</span>
+                    <span>PostgreSQL</span>
+                  </div>
+                </div>
+                <div class="ribbon-expanded-bottom">
+                  <button type="button" class="btn btn-primary btn-sm trigger-hire-talent" data-industry="NBFC" style="width: 100%;">
+                    Deploy NBFC Squad &rarr;
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 11 · Insurance -->
+            <div class="ribbon-card" data-cat="mobility" data-industry="Insurance">
+              <div class="ribbon-collapsed-view">
+                <div class="ribbon-watermark">11</div>
+                <div class="ribbon-icon-wrap">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                </div>
+                <div class="ribbon-vertical-label">11 · InsurTech & Claims</div>
+                <div class="ribbon-dot-indicator" style="background: #10B981;"></div>
+              </div>
+              <div class="ribbon-expanded-content">
+                <div class="ribbon-expanded-top">
+                  <div class="ribbon-header-meta">
+                    <span class="ribbon-badge-tag">11 · Insurance</span>
+                    <span class="ribbon-sla-pill">Claims AI Cleared</span>
+                  </div>
+                  <h3 class="ribbon-card-title">Computer Vision Claims Triage</h3>
+                  <div class="ribbon-challenge-tag">Complex Challenge: Automated Damage Assessment & Fraud AI</div>
+                  <p class="ribbon-card-desc">
+                    Automated vehicle/property damage inspection using computer vision models, instant automated claims adjudication, and dynamic actuarial risk pricing.
+                  </p>
+                  <div class="ribbon-metrics-grid">
+                    <div class="ribbon-metric-box">
+                      <div class="ribbon-metric-val">70%</div>
+                      <div class="ribbon-metric-lbl">Faster Settlement</div>
+                    </div>
+                    <div class="ribbon-metric-box">
+                      <div class="ribbon-metric-val">99.8%</div>
+                      <div class="ribbon-metric-lbl">Fraud Detection Rate</div>
+                    </div>
+                  </div>
+                  <div class="ribbon-tech-pills">
+                    <span>Computer Vision</span>
+                    <span>Actuarial AI</span>
+                    <span>Python</span>
+                    <span>Docker</span>
+                  </div>
+                </div>
+                <div class="ribbon-expanded-bottom">
+                  <button type="button" class="btn btn-primary btn-sm trigger-hire-talent" data-industry="Insurance" style="width: 100%;">
+                    Deploy InsurTech Squad &rarr;
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 12 · NGO -->
+            <div class="ribbon-card" data-cat="enterprise" data-industry="NGO">
+              <div class="ribbon-collapsed-view">
+                <div class="ribbon-watermark">12</div>
+                <div class="ribbon-icon-wrap">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                </div>
+                <div class="ribbon-vertical-label">12 · NGO & Social Impact</div>
+                <div class="ribbon-dot-indicator" style="background: #14B8A6;"></div>
+              </div>
+              <div class="ribbon-expanded-content">
+                <div class="ribbon-expanded-top">
+                  <div class="ribbon-header-meta">
+                    <span class="ribbon-badge-tag">12 · NGO</span>
+                    <span class="ribbon-sla-pill">Global Reach</span>
+                  </div>
+                  <h3 class="ribbon-card-title">Offline Field Telemetry & Traceability</h3>
+                  <div class="ribbon-challenge-tag">Complex Challenge: Field PWA Sync & Immutable Grant Auditing</div>
+                  <p class="ribbon-card-desc">
+                    Multi-currency donation gateways, grant tracking portals, offline-first PWA field survey tools, and executive impact intelligence dashboards.
+                  </p>
+                  <div class="ribbon-metrics-grid">
+                    <div class="ribbon-metric-box">
+                      <div class="ribbon-metric-val">100%</div>
+                      <div class="ribbon-metric-lbl">Audit Traceability</div>
+                    </div>
+                    <div class="ribbon-metric-box">
+                      <div class="ribbon-metric-val">Offline</div>
+                      <div class="ribbon-metric-lbl">PWA Field Sync</div>
+                    </div>
+                  </div>
+                  <div class="ribbon-tech-pills">
+                    <span>Offline PWA</span>
+                    <span>IndexedDB</span>
+                    <span>PostgreSQL</span>
+                    <span>Audit Logs</span>
+                  </div>
+                </div>
+                <div class="ribbon-expanded-bottom">
+                  <button type="button" class="btn btn-primary btn-sm trigger-hire-talent" data-industry="NGO" style="width: 100%;">
+                    Deploy NGO Squad &rarr;
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+           About Us Section (Below 12 Industries Accordion Deck)
+           ========================================================================== -->
+      <section class="about-section" id="home-about">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag"><span class="badge-dot"></span> Who We Are</span>
+            <h2>Architecting High-Velocity Teams & <span class="gradient-text">Future-Ready Software</span></h2>
+            <p>Nexus EDGE is an enterprise IT consulting and digital engineering partner bridging the gap between top 1% specialized tech talent and mission-critical cloud-native execution.</p>
+          </div>
+
+          <!-- Top Bento Story & Metrics Hub -->
+          <div class="about-bento-grid">
+            
+            <!-- Left Narrative & Value Card -->
+            <div class="about-story-card">
+              <div>
+                <div class="about-story-tag">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  Enterprise Engineering Philosophy
+                </div>
+                <h3 class="about-story-title">Bridging Elite Technical Talent With Scalable Digital Systems</h3>
+                <p class="about-story-desc">
+                  Modern enterprises can no longer afford brittle legacy monoliths or multi-month recruitment delays. At Nexus EDGE, we assemble battle-tested, pre-vetted engineering squads equipped with deep vertical domain architectures, automated CI/CD pipelines, and zero-trust security frameworks across 12 global industries.
+                </p>
+              </div>
+
+              <div class="about-checklist-grid">
+                <div class="about-check-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Top 1% Rigorously Vetted Talent</span>
+                </div>
+                <div class="about-check-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>100% Client Code & IP Ownership</span>
+                </div>
+                <div class="about-check-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>ISO 27001 & SOC-2 Certified Security</span>
+                </div>
+                <div class="about-check-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>10-Day SLA Rapid Squad Deployment</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Executive Metrics Hub -->
+            <div class="about-metrics-card">
+              <div>
+                <div class="about-story-tag" style="color: #60EFFF;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                  Proven Enterprise Scale
+                </div>
+                <div class="about-metrics-grid">
+                  <div class="about-metric-tile">
+                    <div class="about-metric-val">500+</div>
+                    <div class="about-metric-lbl">Squads Deployed</div>
+                  </div>
+                  <div class="about-metric-tile">
+                    <div class="about-metric-val">10 Days</div>
+                    <div class="about-metric-lbl">Avg. Deployment SLA</div>
+                  </div>
+                  <div class="about-metric-tile">
+                    <div class="about-metric-val">99.4%</div>
+                    <div class="about-metric-lbl">Squad Retention Rate</div>
+                  </div>
+                  <div class="about-metric-tile">
+                    <div class="about-metric-val">12+</div>
+                    <div class="about-metric-lbl">Global Verticals</div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <button type="button" class="btn btn-primary btn-sm trigger-consultation" style="width: 100%; margin-bottom: 0.6rem;">
+                  Schedule Executive Briefing &rarr;
+                </button>
+                <div style="font-size: 0.75rem; text-align: center; color: var(--text-muted);">
+                  Zero-obligation architecture & talent feasibility assessment.
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Bottom 4 Pillars Grid -->
+          <div class="about-pillars-grid">
+            
+            <div class="about-pillar-card">
+              <div>
+                <div class="about-pillar-num">Pillar 01</div>
+                <h4 class="about-pillar-title">5-Stage Elite Vetting</h4>
+                <p class="about-pillar-desc">Every engineer undergoes live coding, high-concurrency system design reviews, security compliance checks, and real-world domain problem solving.</p>
+              </div>
+            </div>
+
+            <div class="about-pillar-card">
+              <div>
+                <div class="about-pillar-num">Pillar 02</div>
+                <h4 class="about-pillar-title">100% IP Sovereignty</h4>
+                <p class="about-pillar-desc">No proprietary lock-ins or hidden licensing. Complete intellectual property, source repositories, and deployment configs are directly transferred to your enterprise.</p>
+              </div>
+            </div>
+
+            <div class="about-pillar-card">
+              <div>
+                <div class="about-pillar-num">Pillar 03</div>
+                <h4 class="about-pillar-title">Pan-India & Global Reach</h4>
+                <p class="about-pillar-desc">Headquartered in Mumbai BKC with delivery centers in Bengaluru, Hyderabad, Pune, and Delhi NCR delivering seamless timezone alignment for global teams.</p>
+              </div>
+            </div>
+
+            <div class="about-pillar-card">
+              <div>
+                <div class="about-pillar-num">Pillar 04</div>
+                <h4 class="about-pillar-title">Agile SLA Guarantees</h4>
+                <p class="about-pillar-desc">Transparent sprint velocity metrics, guaranteed uptime benchmarks, dedicated delivery leadership, and automated zero-downtime blue/green CI/CD pipelines.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+           Horizontal Alternating 11-Step Talent Consulting Process (Zig-Zag Rail)
+           ========================================================================== -->
+      <section class="horizontal-process-section" id="process-section">
+        <div class="container">
+          <!-- Section Header & Real-time Step Controller -->
+          <div class="proc-header-row">
+            <div class="proc-header-left">
+              <div class="badge" style="margin-bottom: 0.5rem;"><span class="badge-dot"></span> Our Process</div>
+              <h2>A Proven 11-Step <span class="gradient-text">Hiring Framework</span></h2>
+              <p>Transparent, structured, and designed to deliver quality hires with complete visibility at every stage.</p>
+            </div>
+
+            <div class="proc-controls-wrap">
+              <div class="proc-live-indicator" id="proc-active-indicator">
+                <span class="proc-live-dot"></span>
+                <span id="proc-step-label">STEP 01 OF 11</span>
+              </div>
+              <div class="proc-nav-btns">
+                <button type="button" class="proc-ctrl-btn" id="proc-prev-btn" aria-label="Previous Step">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                </button>
+                <button type="button" class="proc-ctrl-btn" id="proc-next-btn" aria-label="Next Step">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Horizontal Interactive Step Cards Viewport -->
+          <div class="proc-horizontal-viewport" id="proc-scroll-viewport">
+            <div class="proc-alternating-timeline" id="proc-horizontal-track">
+              
+              <!-- Continuous Central Line -->
+              <div class="proc-center-line-bg">
+                <div class="proc-center-line-fill" id="proc-progress-fill"></div>
+              </div>
+
+              <!-- COLUMN 1: Step 1 (DOWN) -->
+              <div class="proc-step-col is-down active" data-step="1">
+                <div class="proc-slot-top"></div>
+                <div class="proc-slot-center">
+                  <div class="proc-node" data-step-num="1">1</div>
+                  <div class="proc-stem"></div>
+                </div>
+                <div class="proc-slot-bottom">
+                  <div class="proc-card">
+                    <span class="proc-card-step">STEP 01</span>
+                    <h4>Requirement Gathering</h4>
+                    <p>Deep-dive into your role requirements, team dynamics, and success criteria.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- COLUMN 2: Step 2 (UP) -->
+              <div class="proc-step-col is-up" data-step="2">
+                <div class="proc-slot-top">
+                  <div class="proc-card">
+                    <span class="proc-card-step">STEP 02</span>
+                    <h4>Strategy Discussion</h4>
+                    <p>Collaborative planning session to define sourcing channels and timeline.</p>
+                  </div>
+                </div>
+                <div class="proc-slot-center">
+                  <div class="proc-stem"></div>
+                  <div class="proc-node" data-step-num="2">2</div>
+                </div>
+                <div class="proc-slot-bottom"></div>
+              </div>
+
+              <!-- COLUMN 3: Step 3 (DOWN) -->
+              <div class="proc-step-col is-down" data-step="3">
+                <div class="proc-slot-top"></div>
+                <div class="proc-slot-center">
+                  <div class="proc-node" data-step-num="3">3</div>
+                  <div class="proc-stem"></div>
+                </div>
+                <div class="proc-slot-bottom">
+                  <div class="proc-card">
+                    <span class="proc-card-step">STEP 03</span>
+                    <h4>JD Preparation</h4>
+                    <p>Compelling job descriptions crafted to attract top-tier talent.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- COLUMN 4: Step 4 (UP) -->
+              <div class="proc-step-col is-up" data-step="4">
+                <div class="proc-slot-top">
+                  <div class="proc-card">
+                    <span class="proc-card-step">STEP 04</span>
+                    <h4>Candidate Sourcing</h4>
+                    <p>Multi-channel outreach across our database, networks, and passive talent pools.</p>
+                  </div>
+                </div>
+                <div class="proc-slot-center">
+                  <div class="proc-stem"></div>
+                  <div class="proc-node" data-step-num="4">4</div>
+                </div>
+                <div class="proc-slot-bottom"></div>
+              </div>
+
+              <!-- COLUMN 5: Step 5 (DOWN) -->
+              <div class="proc-step-col is-down" data-step="5">
+                <div class="proc-slot-top"></div>
+                <div class="proc-slot-center">
+                  <div class="proc-node" data-step-num="5">5</div>
+                  <div class="proc-stem"></div>
+                </div>
+                <div class="proc-slot-bottom">
+                  <div class="proc-card">
+                    <span class="proc-card-step">STEP 05</span>
+                    <h4>Resume Screening</h4>
+                    <p>AI-assisted and human-reviewed screening against your criteria.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- COLUMN 6: Step 6 (UP) -->
+              <div class="proc-step-col is-up" data-step="6">
+                <div class="proc-slot-top">
+                  <div class="proc-card">
+                    <span class="proc-card-step">STEP 06</span>
+                    <h4>Assessment</h4>
+                    <p>Technical, aptitude, and behavioral assessments tailored to the role.</p>
+                  </div>
+                </div>
+                <div class="proc-slot-center">
+                  <div class="proc-stem"></div>
+                  <div class="proc-node" data-step-num="6">6</div>
+                </div>
+                <div class="proc-slot-bottom"></div>
+              </div>
+
+              <!-- COLUMN 7: Step 7 (DOWN) -->
+              <div class="proc-step-col is-down" data-step="7">
+                <div class="proc-slot-top"></div>
+                <div class="proc-slot-center">
+                  <div class="proc-node" data-step-num="7">7</div>
+                  <div class="proc-stem"></div>
+                </div>
+                <div class="proc-slot-bottom">
+                  <div class="proc-card">
+                    <span class="proc-card-step">STEP 07</span>
+                    <h4>Interview Coordination</h4>
+                    <p>Seamless scheduling and logistics for all interview rounds.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- COLUMN 8: Step 8 (UP) -->
+              <div class="proc-step-col is-up" data-step="8">
+                <div class="proc-slot-top">
+                  <div class="proc-card">
+                    <span class="proc-card-step">STEP 08</span>
+                    <h4>Client Interviews</h4>
+                    <p>Curated shortlists presented with detailed candidate profiles.</p>
+                  </div>
+                </div>
+                <div class="proc-slot-center">
+                  <div class="proc-stem"></div>
+                  <div class="proc-node" data-step-num="8">8</div>
+                </div>
+                <div class="proc-slot-bottom"></div>
+              </div>
+
+              <!-- COLUMN 9: Step 9 (DOWN) -->
+              <div class="proc-step-col is-down" data-step="9">
+                <div class="proc-slot-top"></div>
+                <div class="proc-slot-center">
+                  <div class="proc-node" data-step-num="9">9</div>
+                  <div class="proc-stem"></div>
+                </div>
+                <div class="proc-slot-bottom">
+                  <div class="proc-card">
+                    <span class="proc-card-step">STEP 09</span>
+                    <h4>Offer Rollout</h4>
+                    <p>Compensation benchmarking and offer negotiation support.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- COLUMN 10: Step 10 (UP) -->
+              <div class="proc-step-col is-up" data-step="10">
+                <div class="proc-slot-top">
+                  <div class="proc-card">
+                    <span class="proc-card-step">STEP 10</span>
+                    <h4>Joining</h4>
+                    <p>Documentation, onboarding coordination, and day-one readiness.</p>
+                  </div>
+                </div>
+                <div class="proc-slot-center">
+                  <div class="proc-stem"></div>
+                  <div class="proc-node" data-step-num="10">10</div>
+                </div>
+                <div class="proc-slot-bottom"></div>
+              </div>
+
+              <!-- COLUMN 11: Step 11 (DOWN) -->
+              <div class="proc-step-col is-down" data-step="11">
+                <div class="proc-slot-top"></div>
+                <div class="proc-slot-center">
+                  <div class="proc-node" data-step-num="11">11</div>
+                  <div class="proc-stem"></div>
+                </div>
+                <div class="proc-slot-bottom">
+                  <div class="proc-card">
+                    <span class="proc-card-step">STEP 11</span>
+                    <h4>Post Joining Support</h4>
+                    <p>30-90 day check-ins to ensure successful integration and retention.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- 2026 Tech Salary Benchmark Tool -->
+      <section style="padding: 0 0 6rem 0;">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Compensation Intelligence</span>
+            <h2>2026 Tech Compensation & Rate Card Benchmark</h2>
+            <p>Live salary brackets based on real placement data across India's premier tech centers.</p>
+          </div>
+
+          <div class="salary-calc-card">
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+              <div class="form-group">
+                <label>Technical Specialization</label>
+                <select id="sal-role-select" class="form-control">
+                  <option value="react">React / Next.js Full-Stack</option>
+                  <option value="golang" selected>Golang & Distributed Systems</option>
+                  <option value="devops">DevOps & Kubernetes Architect</option>
+                  <option value="ai">AI / GenAI & ML Engineer</option>
+                  <option value="architect">Principal Enterprise Architect</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>Experience Tier</label>
+                <select id="sal-exp-select" class="form-control">
+                  <option value="3">3 - 5 Years (Mid-Level)</option>
+                  <option value="6" selected>6 - 9 Years (Senior)</option>
+                  <option value="10">10+ Years (Lead / Staff)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>Location Hub</label>
+                <select id="sal-city-select" class="form-control">
+                  <option value="1.0" selected>Bengaluru / Mumbai</option>
+                  <option value="0.95">Hyderabad / Pune</option>
+                  <option value="0.9">NCR (Gurugram/Noida)</option>
+                  <option value="1.05">Remote (Pan-India Elite)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="salary-results-row">
+              <div class="sal-box">
+                <div class="s-lbl">Market Min CTC</div>
+                <div class="s-val" id="sal-out-min">₹28.5 L</div>
+              </div>
+              <div class="sal-box">
+                <div class="s-lbl">Median Compensation</div>
+                <div class="s-val" id="sal-out-median">₹34.8 L</div>
+              </div>
+              <div class="sal-box">
+                <div class="s-lbl">Top 10% Bracket</div>
+                <div class="s-val" id="sal-out-max">₹41.8 L</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- Verified Cloud Partner Badges -->
+      <section style="padding: 0 0 6rem 0;">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Certified Partner Ecosystem</span>
+            <h2>Accredited Cloud & Technology Partners</h2>
+            <p>Our engineering squads are officially certified across tier-1 global cloud and infrastructure platforms.</p>
+          </div>
+
+          <div class="partner-badges-wrap">
+            <div class="partner-badge-card">
+              <span class="partner-badge-icon">☁️</span>
+              <div class="partner-badge-text">
+                <div class="p-title">AWS Partner Network</div>
+                <div class="p-tier">Advanced Tier Services</div>
+              </div>
+            </div>
+            <div class="partner-badge-card">
+              <span class="partner-badge-icon">🌐</span>
+              <div class="partner-badge-text">
+                <div class="p-title">Google Cloud</div>
+                <div class="p-tier">Premier Partner</div>
+              </div>
+            </div>
+            <div class="partner-badge-card">
+              <span class="partner-badge-icon">🏢</span>
+              <div class="partner-badge-text">
+                <div class="p-title">Microsoft Azure</div>
+                <div class="p-tier">Solutions Partner</div>
+              </div>
+            </div>
+            <div class="partner-badge-card">
+              <span class="partner-badge-icon">⚙️</span>
+              <div class="partner-badge-text">
+                <div class="p-title">Cloud Native Computing</div>
+                <div class="p-tier">KCSP Certified</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- FAQ Section -->
+      <section style="padding: 0 0 6rem 0;">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Frequently Asked Questions</span>
+            <h2>Everything You Need to Know</h2>
+            <p>Clear answers to common questions about our talent consulting, billing models, SLAs, and software delivery.</p>
+          </div>
+
+          <div class="faq-wrap">
+            <div class="faq-item active">
+              <button class="faq-question">
+                <span>How fast can Nexus EDGE deploy engineers or close senior positions?</span>
+                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+              <div class="faq-answer">
+                For contract staff augmentation and dedicated engineering squads, we deploy pre-vetted senior developers within 5 to 10 business days. For permanent technical and executive search, we deliver curated shortlists of top 3-5 candidates within 5 to 7 days, reducing overall time-to-hire by 45%.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>Who owns the code and intellectual property for software built by Nexus EDGE?</span>
+                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+              <div class="faq-answer">
+                You own 100% of all intellectual property, source code, repositories, Docker scripts, and architecture assets. We do not maintain any proprietary lock-ins or hidden licensing fees.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>What guarantees do you provide for candidate retention?</span>
+                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+              <div class="faq-answer">
+                We provide a comprehensive 90-day to 1-year free replacement guarantee on all permanent executive and technical placements. Our historical 1-year retention rate stands at 98% across 3,000+ career placements.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>Can we transition contract developers into permanent full-time employees?</span>
+                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+              <div class="faq-answer">
+                Yes! We offer flexible Contract-to-Hire (C2H) engagement models allowing you to evaluate an engineer's on-the-job execution before converting them into a permanent payroll employee.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Banner -->
+      <section class="cta-banner-section">
+        <div class="container">
+          <div class="cta-banner-card">
+            <h2>Ready to Scale Your Team or Ship Software?</h2>
+            <p>Schedule a confidential consultation with our Senior Partners to discuss your technical hiring roadmaps or custom engineering requirements.</p>
+            <div class="cta-banner-actions">
+              <button class="btn btn-primary btn-lg trigger-consultation">Book Discovery Call</button>
+              <a href="#contact" class="btn btn-outline btn-lg" data-route="contact" style="color: white; border-color: rgba(255,255,255,0.3);">Explore Engagement Models</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- ==========================================================================
+         PAGE 2: ABOUT US
+         ========================================================================== -->
+    <section class="page-section" id="page-about">
+      <div class="page-hero">
+        <div class="container">
+          <div class="badge" style="margin-bottom: 1rem;"><span class="badge-dot"></span> Established 2014</div>
+          <h1>Building Careers, <span class="gradient-text">Shipping Software</span></h1>
+          <p>For over a decade, Nexus EDGE has been the trusted consulting and engineering partner for enterprises that demand exceptional talent and reliable technology.</p>
+        </div>
+      </div>
+
+      <div class="container" style="padding-bottom: 5rem;">
+        <div class="about-story-grid">
+          <div>
+            <span class="section-tag" style="color: var(--brand-green-500); font-family: var(--font-mono); font-weight: 700;">OUR EVOLUTION</span>
+            <h2 style="font-size: 2.4rem; margin: 0.5rem 0 1.25rem 0;">From Boutique Search to Pan-India IT Consulting Powerhouse</h2>
+            <p style="margin-bottom: 1.25rem; font-size: 1.05rem;">
+              Nexus EDGE was founded in 2014 with a singular ambition: transform how organizations discover talent — and later, how they build high-scale software. What began as an executive search practice in Mumbai has expanded into a pan-India consulting and IT services partner serving 150+ enterprise clients across 23 verticals.
+            </p>
+            <p style="font-size: 1.05rem;">
+              Traditional recruitment was opaque and transactional. Traditional IT outsourcing vendors were disconnected from real business value. We created an integrated framework: human talent intelligence coupled with hands-on product engineering, absolute transparency, and uncompromised quality.
+            </p>
+          </div>
+          <div>
+            <div style="background: var(--bg-surface-elevated); border: 1px solid var(--border-color); border-radius: var(--radius-xl); padding: 2.5rem; box-shadow: var(--card-shadow);">
+              <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--brand-green-500);">Our Mission & Vision</h3>
+              <div style="margin-bottom: 1.5rem;">
+                <h4 style="font-size: 1.1rem; margin-bottom: 0.4rem;">Our Mission</h4>
+                <p style="font-size: 0.95rem;">To connect exceptional talent with organizations where they thrive — and engineer the software those organizations run on — creating compounding value for businesses, professionals, and communities.</p>
+              </div>
+              <div>
+                <h4 style="font-size: 1.1rem; margin-bottom: 0.4rem;">Our Vision</h4>
+                <p style="font-size: 0.95rem;">To be the most trusted consulting and IT services partner in Asia, setting the gold standard for senior hiring, product craftsmanship, and unwavering integrity.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Executive Leadership Team -->
+        <div class="section-header">
+          <span class="section-tag">LEADERSHIP</span>
+          <h2>Meet Our Executive Team</h2>
+          <p>Seasoned enterprise technology leaders, talent directors, and software architects driving our client success.</p>
+        </div>
+
+        <div class="team-grid" style="margin-bottom: 5rem;">
+          <div class="leader-card">
+            <div class="leader-avatar-box">
+              <div class="leader-avatar-circle">RS</div>
+            </div>
+            <div class="leader-body">
+              <div class="leader-name">Rajesh Singhania</div>
+              <div class="leader-role">Founder & Managing Partner</div>
+              <div class="leader-bio">20+ years in executive talent strategy and enterprise consulting across India, APAC, and North America.</div>
+              <div class="leader-social">
+                <span class="badge" style="font-size: 0.7rem;">LinkedIn Verified</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="leader-card">
+            <div class="leader-avatar-box">
+              <div class="leader-avatar-circle">MD</div>
+            </div>
+            <div class="leader-body">
+              <div class="leader-name">Meera Deshmukh</div>
+              <div class="leader-role">Chief Technology Officer & Partner</div>
+              <div class="leader-bio">Former Principal Cloud Architect at tier-1 MNCs; specializes in distributed microservices and fintech scaling.</div>
+              <div class="leader-social">
+                <span class="badge" style="font-size: 0.7rem;">LinkedIn Verified</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="leader-card">
+            <div class="leader-avatar-box">
+              <div class="leader-avatar-circle">AV</div>
+            </div>
+            <div class="leader-body">
+              <div class="leader-name">Arun Varma</div>
+              <div class="leader-role">Head of Technical Recruitment</div>
+              <div class="leader-bio">Leads our 80+ engineering recruiters; has overseen 3,000+ senior engineering and executive placements.</div>
+              <div class="leader-social">
+                <span class="badge" style="font-size: 0.7rem;">LinkedIn Verified</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="leader-card">
+            <div class="leader-avatar-box">
+              <div class="leader-avatar-circle">PS</div>
+            </div>
+            <div class="leader-body">
+              <div class="leader-name">Pooja Sharma</div>
+              <div class="leader-role">Head of HR Consulting & Total Rewards</div>
+              <div class="leader-bio">Advisor to high-growth unicorns on compensation benchmarking, ESOP design, and retention policy.</div>
+              <div class="leader-social">
+                <span class="badge" style="font-size: 0.7rem;">LinkedIn Verified</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Delivery Hubs Map -->
+        <div class="section-header">
+          <span class="section-tag">PAN-INDIA INFRASTRUCTURE</span>
+          <h2>Interactive Delivery Network</h2>
+          <p>Click on any of our technology hubs to inspect our regional staffing strength and localized domain practices.</p>
+        </div>
+
+        <div class="map-container-card">
+          <div class="map-layout">
+            <div class="map-visual-wrap">
+              <svg class="map-svg-india" viewBox="0 0 400 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M 170 30 L 220 50 L 250 100 L 320 120 L 310 170 L 270 180 L 250 220 L 260 280 L 220 380 L 190 420 L 160 380 L 130 280 L 100 220 L 90 160 L 130 110 L 140 60 Z" 
+                      fill="rgba(0, 200, 83, 0.05)" stroke="var(--brand-green-500)" stroke-width="1.5" stroke-dasharray="4 4"/>
+                
+                <g class="map-pin" data-hub="gurugram" transform="translate(175, 120)">
+                  <circle cx="0" cy="0" r="14" fill="rgba(0, 200, 83, 0.2)"/>
+                  <circle class="pin-dot" cx="0" cy="0" r="6" fill="#00C853"/>
+                  <text x="12" y="4" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="var(--text-primary)">Gurugram (NCR)</text>
+                </g>
+
+                <g class="map-pin active" data-hub="mumbai" transform="translate(125, 250)">
+                  <circle cx="0" cy="0" r="16" fill="rgba(0, 200, 83, 0.3)"/>
+                  <circle class="pin-dot" cx="0" cy="0" r="7" fill="#00C853"/>
+                  <text x="-95" y="4" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="800" fill="#00C853">Mumbai (HQ)</text>
+                </g>
+
+                <g class="map-pin" data-hub="pune" transform="translate(145, 275)">
+                  <circle cx="0" cy="0" r="12" fill="rgba(0, 200, 83, 0.2)"/>
+                  <circle class="pin-dot" cx="0" cy="0" r="5" fill="#00C853"/>
+                  <text x="12" y="4" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="var(--text-primary)">Pune</text>
+                </g>
+
+                <g class="map-pin" data-hub="hyderabad" transform="translate(200, 290)">
+                  <circle cx="0" cy="0" r="14" fill="rgba(0, 200, 83, 0.2)"/>
+                  <circle class="pin-dot" cx="0" cy="0" r="6" fill="#00C853"/>
+                  <text x="12" y="4" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="var(--text-primary)">Hyderabad</text>
+                </g>
+
+                <g class="map-pin" data-hub="bangalore" transform="translate(180, 360)">
+                  <circle cx="0" cy="0" r="16" fill="rgba(0, 200, 83, 0.3)"/>
+                  <circle class="pin-dot" cx="0" cy="0" r="7" fill="#00C853"/>
+                  <text x="14" y="4" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="800" fill="var(--brand-green-500)">Bengaluru</text>
+                </g>
+              </svg>
+            </div>
+
+            <div class="hub-details-display" id="hub-details-content"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PAGE 3: SERVICES
+         ========================================================================== -->
+    <section class="page-section" id="page-services">
+      <div class="page-hero">
+        <div class="container">
+          <div class="badge" style="margin-bottom: 1rem;"><span class="badge-dot"></span> End-to-End Solutions</div>
+          <h1>Consulting & <span class="gradient-text">IT Services</span></h1>
+          <p>Talent acquisition and HR advisory on one wing. Software engineering, cloud architecture, and digital products on the other.</p>
+        </div>
+      </div>
+
+      <div class="container" style="padding-bottom: 5rem;">
+        <div style="margin-bottom: 5rem;">
+          <div class="section-header" style="margin-bottom: 2rem;">
+            <span class="section-tag">Technology Radar</span>
+            <h2>Supported Engineering Stacks</h2>
+            <p>Filter by technical layer to inspect the frameworks, databases, and architectures our squads specialize in.</p>
+          </div>
+
+          <div class="tech-explorer-nav">
+            <button class="tech-tab-btn active" data-tech-layer="all">All Technologies</button>
+            <button class="tech-tab-btn" data-tech-layer="frontend">Frontend & Web</button>
+            <button class="tech-tab-btn" data-tech-layer="backend">Backend & Microservices</button>
+            <button class="tech-tab-btn" data-tech-layer="mobile">Mobile (iOS / Android)</button>
+            <button class="tech-tab-btn" data-tech-layer="cloud">Cloud & DevOps</button>
+            <button class="tech-tab-btn" data-tech-layer="database">Databases & Streaming</button>
+            <button class="tech-tab-btn" data-tech-layer="ai">AI / GenAI & ML</button>
+          </div>
+
+          <div class="tech-grid" id="tech-grid-container"></div>
+        </div>
+
+        <!-- Service Category 1: Talent Consulting -->
+        <div style="margin-bottom: 5rem;">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem;">
+            <div style="width: 40px; height: 40px; border-radius: 10px; background: rgba(0, 200, 83, 0.15); color: var(--brand-green-500); display: flex; align-items: center; justify-content: center;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
+            </div>
+            <div>
+              <h2 style="font-size: 2rem;">Talent Acquisition & HR Consulting</h2>
+              <p style="font-size: 0.95rem;">Comprehensive hiring solutions tailored to your growth phase and scale.</p>
+            </div>
+          </div>
+
+          <div class="bento-grid">
+            <div class="bento-card">
+              <h4>Permanent Recruitment</h4>
+              <p>End-to-end recruitment for mid-to-senior technical, functional, and corporate positions across all major engineering domains.</p>
+              <div class="bento-tag-list">
+                <span class="bento-tag">Technical Roles</span>
+                <span class="bento-tag">Mid-Senior</span>
+                <span class="bento-tag">Full Lifecycle</span>
+              </div>
+            </div>
+            <div class="bento-card">
+              <h4>Executive Search</h4>
+              <p>Confidential talent mapping and executive acquisition for C-Suite leaders, Vice Presidents, and Distinguished Engineers.</p>
+              <div class="bento-tag-list">
+                <span class="bento-tag">CXO</span>
+                <span class="bento-tag">Confidential</span>
+                <span class="bento-tag">Board Advisory</span>
+              </div>
+            </div>
+            <div class="bento-card">
+              <h4>IT Staff Augmentation</h4>
+              <p>On-demand specialized engineers, DevOps practitioners, and architects to immediately expand your internal engineering bandwidth.</p>
+              <div class="bento-tag-list">
+                <span class="bento-tag">Flexible Duration</span>
+                <span class="bento-tag">Fast Onboarding</span>
+                <span class="bento-tag">Pre-Screened</span>
+              </div>
+            </div>
+            <div class="bento-card">
+              <h4>Recruitment Process Outsourcing (RPO)</h4>
+              <p>Embedded recruitment teams handling your entire hiring pipeline from employer branding to onboarding under clear SLAs.</p>
+              <div class="bento-tag-list">
+                <span class="bento-tag">Dedicated Recruiter Pod</span>
+                <span class="bento-tag">Cost Efficient</span>
+                <span class="bento-tag">Scalable Volume</span>
+              </div>
+            </div>
+            <div class="bento-card">
+              <h4>Campus & Graduate Hiring</h4>
+              <p>Structured tier-1 and tier-2 college recruitment drives, automated coding hackathons, and early-career talent programs.</p>
+              <div class="bento-tag-list">
+                <span class="bento-tag">Pan-India Colleges</span>
+                <span class="bento-tag">Coding Contests</span>
+                <span class="bento-tag">Batch Onboarding</span>
+              </div>
+            </div>
+            <div class="bento-card">
+              <h4>HR Consulting & Policy Design</h4>
+              <p>Compensation benchmarking, employee retention programs, performance appraisal architecture, and organizational design.</p>
+              <div class="bento-tag-list">
+                <span class="bento-tag">ESOP & Comp Benchmarking</span>
+                <span class="bento-tag">Retention</span>
+                <span class="bento-tag">Org Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Category 2: IT Services -->
+        <div>
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem;">
+            <div style="width: 40px; height: 40px; border-radius: 10px; background: rgba(0, 200, 83, 0.15); color: var(--brand-green-500); display: flex; align-items: center; justify-content: center;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <div>
+              <h2 style="font-size: 2rem;">Software Engineering & IT Delivery</h2>
+              <p style="font-size: 0.95rem;">Modern full-stack application development and cloud modernization.</p>
+            </div>
+          </div>
+
+          <div class="bento-grid">
+            <div class="bento-card">
+              <h4>Custom Web & SaaS Development</h4>
+              <p>Scalable, modular cloud web applications engineered with Next.js, React, Node.js, Golang, and modern micro-frontends.</p>
+              <div class="bento-tag-list">
+                <span class="bento-tag">React / Next.js</span>
+                <span class="bento-tag">TypeScript</span>
+                <span class="bento-tag">PostgreSQL</span>
+              </div>
+            </div>
+            <div class="bento-card">
+              <h4>Mobile App Engineering</h4>
+              <p>Native (iOS Swift, Android Kotlin) and high-performance cross-platform (Flutter, React Native) mobile solutions.</p>
+              <div class="bento-tag-list">
+                <span class="bento-tag">iOS / Android</span>
+                <span class="bento-tag">Flutter</span>
+                <span class="bento-tag">React Native</span>
+              </div>
+            </div>
+            <div class="bento-card">
+              <h4>Cloud Architecture & DevOps</h4>
+              <p>Cloud-native infrastructure on AWS, Google Cloud, and Azure with Kubernetes orchestration, Terraform IaC, and automated CI/CD.</p>
+              <div class="bento-tag-list">
+                <span class="bento-tag">AWS / GCP / Azure</span>
+                <span class="bento-tag">Kubernetes</span>
+                <span class="bento-tag">CI/CD Automation</span>
+              </div>
+            </div>
+            <div class="bento-card">
+              <h4>Legacy Modernization</h4>
+              <p>Refactor legacy enterprise monoliths into resilient, event-driven microservices with zero downtime and strict data fidelity.</p>
+              <div class="bento-tag-list">
+                <span class="bento-tag">Strangler Pattern</span>
+                <span class="bento-tag">Kafka Events</span>
+                <span class="bento-tag">API Gateways</span>
+              </div>
+            </div>
+            <div class="bento-card">
+              <h4>QA & Test Automation</h4>
+              <p>End-to-end automated testing pipelines (Cypress, Playwright, Selenium, Appium) with performance and security load testing.</p>
+              <div class="bento-tag-list">
+                <span class="bento-tag">Playwright</span>
+                <span class="bento-tag">Cypress</span>
+                <span class="bento-tag">Security Auditing</span>
+              </div>
+            </div>
+            <div class="bento-card">
+              <h4>Dedicated Engineering Squads</h4>
+              <p>Full-stack product squads dedicated 100% to your roadmap, operating with agile 2-week sprint cadences.</p>
+              <div class="bento-tag-list">
+                <span class="bento-tag">Autonomous Pods</span>
+                <span class="bento-tag">Agile Cadence</span>
+                <span class="bento-tag">Full IP Ownership</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PAGE 4: INDUSTRIES
+         ========================================================================== -->
+    <section class="page-section" id="page-industries">
+      <div class="page-hero">
+        <div class="container">
+          <div class="badge" style="margin-bottom: 1rem;"><span class="badge-dot"></span> Domain Depth</div>
+          <h1>Specialized Across <span class="gradient-text">23+ Verticals</span></h1>
+          <p>Industry-specialist recruiters and engineers who understand your sector's regulatory environment, tech stack, and talent landscape.</p>
+        </div>
+      </div>
+
+      <div class="container" style="padding-bottom: 5rem;">
+        <div class="bento-grid">
+          <div class="bento-card">
+            <div class="bento-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+            </div>
+            <h4>FinTech & Payments</h4>
+            <p>Payment gateways, UPI integrations, neo-banking apps, blockchain protocols, and automated fraud detection systems.</p>
+            <div class="bento-tag-list">
+              <span class="bento-tag">PCI-DSS</span>
+              <span class="bento-tag">UPI / ISO 8583</span>
+              <span class="bento-tag">Core Banking</span>
+            </div>
+          </div>
+
+          <div class="bento-card">
+            <div class="bento-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+            </div>
+            <h4>Healthcare & HealthTech</h4>
+            <p>HIPAA-compliant telemedicine platforms, Electronic Health Records (EHR), medical IoT device connectivity, and AI diagnostic tooling.</p>
+            <div class="bento-tag-list">
+              <span class="bento-tag">HIPAA</span>
+              <span class="bento-tag">EHR Integration</span>
+              <span class="bento-tag">Telehealth</span>
+            </div>
+          </div>
+
+          <div class="bento-card">
+            <div class="bento-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+            </div>
+            <h4>E-Commerce & Retail</h4>
+            <p>High-throughput headless commerce, omnichannel inventory sync, AI-driven recommendation engines, and flash-sale architectures.</p>
+            <div class="bento-tag-list">
+              <span class="bento-tag">Headless</span>
+              <span class="bento-tag">High-Concurrency</span>
+              <span class="bento-tag">Logistics Sync</span>
+            </div>
+          </div>
+
+          <div class="bento-card">
+            <div class="bento-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+            </div>
+            <h4>BFSI & Banking</h4>
+            <p>Core banking migrations, risk analytics models, insurance underwriting engines, and regulatory reporting automations.</p>
+            <div class="bento-tag-list">
+              <span class="bento-tag">RBI Compliant</span>
+              <span class="bento-tag">Risk Modeling</span>
+              <span class="bento-tag">Open Banking</span>
+            </div>
+          </div>
+
+          <div class="bento-card">
+            <div class="bento-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+            </div>
+            <h4>Logistics & Supply Chain</h4>
+            <p>Fleet tracking telemetry, warehouse management systems (WMS), automated route optimization, and carrier integrations.</p>
+            <div class="bento-tag-list">
+              <span class="bento-tag">IoT Tracking</span>
+              <span class="bento-tag">Route Optimization</span>
+              <span class="bento-tag">WMS</span>
+            </div>
+          </div>
+
+          <div class="bento-card">
+            <div class="bento-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+            </div>
+            <h4>EdTech & Learning</h4>
+            <p>Interactive virtual classroom engines, adaptive learning algorithms, proctoring systems, and student lifecycle management portals.</p>
+            <div class="bento-tag-list">
+              <span class="bento-tag">WebRTC Classrooms</span>
+              <span class="bento-tag">LMS</span>
+              <span class="bento-tag">Automated Grading</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PAGE 5: WHY CHOOSE US
+         ========================================================================== -->
+    <section class="page-section" id="page-why-us">
+      <div class="page-hero">
+        <div class="container">
+          <div class="badge" style="margin-bottom: 1rem;"><span class="badge-dot"></span> The Nexus EDGE Advantage</div>
+          <h1>The Partner You Can <span class="gradient-text">Trust</span></h1>
+          <p>We don't just fill positions or write tickets — we build high-performing teams and ship production-grade software that drives long-term business growth.</p>
+        </div>
+      </div>
+
+      <div class="container" style="padding-bottom: 5rem;">
+        <div style="background: var(--bg-surface-elevated); border: 1px solid var(--border-color); border-radius: var(--radius-xl); padding: 2.5rem; box-shadow: var(--card-shadow); margin-bottom: 4rem; overflow-x: auto;">
+          <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">The Competitive Matrix</h3>
+          <table style="width: 100%; border-collapse: collapse; min-width: 600px;">
+            <thead>
+              <tr style="border-bottom: 2px solid var(--border-color); text-align: left;">
+                <th style="padding: 1rem; color: var(--text-muted); font-size: 0.9rem;">Evaluation Criteria</th>
+                <th style="padding: 1rem; color: var(--text-muted); font-size: 0.9rem;">Traditional Staffing Agency</th>
+                <th style="padding: 1rem; color: var(--text-muted); font-size: 0.9rem;">Generic IT Vendor</th>
+                <th style="padding: 1rem; color: var(--brand-green-500); font-size: 1rem; font-weight: 800;">Nexus EDGE Unified Model</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid var(--border-subtle);">
+                <td style="padding: 1rem; font-weight: 600;">Technical Vetting</td>
+                <td style="padding: 1rem; color: var(--text-secondary);">Keyword search only</td>
+                <td style="padding: 1rem; color: var(--text-secondary);">Junior bench allocation</td>
+                <td style="padding: 1rem; color: var(--brand-green-500); font-weight: 700;">Multi-stage architect evaluation</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--border-subtle);">
+                <td style="padding: 1rem; font-weight: 600;">Average Time-to-Hire</td>
+                <td style="padding: 1rem; color: var(--text-secondary);">45 - 60 Days</td>
+                <td style="padding: 1rem; color: var(--text-secondary);">30 - 45 Days</td>
+                <td style="padding: 1rem; color: var(--brand-green-500); font-weight: 700;">14 - 21 Days (45% Faster)</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--border-subtle);">
+                <td style="padding: 1rem; font-weight: 600;">Software Engineering</td>
+                <td style="padding: 1rem; color: var(--text-secondary);">None (Staffing only)</td>
+                <td style="padding: 1rem; color: var(--text-secondary);">Rigid waterfall contracts</td>
+                <td style="padding: 1rem; color: var(--brand-green-500); font-weight: 700;">Agile squads & full IP ownership</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--border-subtle);">
+                <td style="padding: 1rem; font-weight: 600;">Candidate Retention</td>
+                <td style="padding: 1rem; color: var(--text-secondary);">70% - 80%</td>
+                <td style="padding: 1rem; color: var(--text-secondary);">High bench churn</td>
+                <td style="padding: 1rem; color: var(--brand-green-500); font-weight: 700;">98% 1-Year Retention Guarantee</td>
+              </tr>
+              <tr>
+                <td style="padding: 1rem; font-weight: 600;">Business Model Alignment</td>
+                <td style="padding: 1rem; color: var(--text-secondary);">Transactional fee</td>
+                <td style="padding: 1rem; color: var(--text-secondary);">Time & materials billing</td>
+                <td style="padding: 1rem; color: var(--brand-green-500); font-weight: 700;">Outcome-driven strategic partner</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="values-grid">
+          <div class="value-card">
+            <h4>Fast Hiring</h4>
+            <p>Average time-to-hire reduced by 45% through proactive pre-vetted talent pipelines and AI-assisted technical screening.</p>
+          </div>
+          <div class="value-card">
+            <h4>Senior Engineering</h4>
+            <p>No junior bench handoffs. Your project is led by hands-on Principal Architects with proven enterprise production track records.</p>
+          </div>
+          <div class="value-card">
+            <h4>100% Code Ownership</h4>
+            <p>All source code, Docker configs, CI/CD scripts, and intellectual property remain 100% yours with no vendor lock-in.</p>
+          </div>
+          <div class="value-card">
+            <h4>Pan-India Depth</h4>
+            <p>Physical offices in Mumbai, Bengaluru, Hyderabad, Pune, and Gurugram for on-the-ground candidate verification.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PAGE 6: OUR PROCESS
+         ========================================================================== -->
+    <section class="page-section" id="page-process">
+      <div class="page-hero">
+        <div class="container">
+          <div class="badge" style="margin-bottom: 1rem;"><span class="badge-dot"></span> Proven Execution Framework</div>
+          <h1>Structured for <span class="gradient-text">Speed & Precision</span></h1>
+          <p>Every talent search and software engagement follows a transparent, structured methodology with complete executive visibility at each milestone.</p>
+        </div>
+      </div>
+
+      <div class="container" style="padding-bottom: 5rem;">
+        <div class="process-tabs-wrap">
+          <div class="process-toggle-bar">
+            <button class="process-tab-btn active" id="tab-proc-talent">11-Step Talent Hiring Cycle</button>
+            <button class="process-tab-btn" id="tab-proc-it">6-Phase Agile IT Delivery</button>
+          </div>
+        </div>
+
+        <div class="process-timeline" id="timeline-talent">
+          <div class="step-card">
+            <div class="step-header">
+              <span class="step-num">STEP 01</span>
+            </div>
+            <h4>Requirement Discovery</h4>
+            <p>Deep-dive with engineering leadership into tech stack, seniority requirements, team dynamics, and compensation brackets.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-header">
+              <span class="step-num">STEP 02</span>
+            </div>
+            <h4>Talent Pool Mapping</h4>
+            <p>Market mapping across competitors and peer tech companies to identify active and passive top 1% engineers.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-header">
+              <span class="step-num">STEP 03</span>
+            </div>
+            <h4>Technical Screening</h4>
+            <p>Live technical interview and architecture review conducted by domain-expert engineers before client submission.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-header">
+              <span class="step-num">STEP 04</span>
+            </div>
+            <h4>Behavioral & Culture Fit</h4>
+            <p>Structured competency interviews evaluating ownership mindset, communication, and team alignment.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-header">
+              <span class="step-num">STEP 05</span>
+            </div>
+            <h4>Curated Shortlist</h4>
+            <p>Delivery of top 3-5 verified candidates within 5-7 business days with comprehensive technical scorecards.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-header">
+              <span class="step-num">STEP 06</span>
+            </div>
+            <h4>Client Interviews</h4>
+            <p>Seamless interview scheduling, candidate debriefs, and real-time feedback loops to refine selection.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-header">
+              <span class="step-num">STEP 07</span>
+            </div>
+            <h4>Offer Negotiation</h4>
+            <p>Compensation advisory, offer structuring, and active candidate buy-in management to achieve 90%+ offer acceptance.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-header">
+              <span class="step-num">STEP 08</span>
+            </div>
+            <h4>Background Verification</h4>
+            <p>Rigorous employment history, education, criminal check, and professional reference validation.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-header">
+              <span class="step-num">STEP 09</span>
+            </div>
+            <h4>Notice Period Engagement</h4>
+            <p>Weekly touchpoints and risk mitigation during notice periods to prevent last-minute drop-offs.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-header">
+              <span class="step-num">STEP 10</span>
+            </div>
+            <h4>Day-1 Onboarding</h4>
+            <p>Assistance with hardware dispatch, IT credentials setup, and welcome alignment on Day 1.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-header">
+              <span class="step-num">STEP 11</span>
+            </div>
+            <h4>Post-Placement Success</h4>
+            <p>30-60-90 day performance checkpoints and our 1-year replacement guarantee policy.</p>
+          </div>
+        </div>
+
+        <div class="process-timeline" id="timeline-it" style="display: none;">
+          <div class="step-card">
+            <div class="step-header">
+              <span class="step-num">PHASE 01</span>
+            </div>
+            <h4>Architectural Discovery</h4>
+            <p>Requirements definition, system architecture blueprints, tech stack selection, and milestone estimation.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-header">
+              <span class="step-num">PHASE 02</span>
+            </div>
+            <h4>UX/UI & Prototyping</h4>
+            <p>Interactive Figma designs, design system tokens, responsive wireframes, and user journey validation.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-header">
+              <span class="step-num">PHASE 03</span>
+            </div>
+            <h4>Agile Sprint Engineering</h4>
+            <p>2-week sprints with sprint planning, daily standups, continuous CI/CD integration, and working demo releases.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-header">
+              <span class="step-num">PHASE 04</span>
+            </div>
+            <h4>Automated QA & Security</h4>
+            <p>Automated regression testing, performance load benchmarking, and penetration security assessments.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-header">
+              <span class="step-num">PHASE 05</span>
+            </div>
+            <h4>Production Deployment</h4>
+            <p>Zero-downtime blue/green deployments, database migrations, and telemetry monitoring setup.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-header">
+              <span class="step-num">PHASE 06</span>
+            </div>
+            <h4>SLA Support & Handover</h4>
+            <p>Comprehensive documentation, internal team knowledge transfers, and 24/7 SLA maintenance support.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PAGE 7: CASE STUDIES
+         ========================================================================== -->
+    <section class="page-section" id="page-case-studies">
+      <div class="page-hero">
+        <div class="container">
+          <div class="badge" style="margin-bottom: 1rem;"><span class="badge-dot"></span> Real Results</div>
+          <h1>Client <span class="gradient-text">Success Stories</span></h1>
+          <p>Explore how our unified talent and software engineering solutions delivered measurable enterprise outcomes.</p>
+        </div>
+      </div>
+
+      <div class="container" style="padding-bottom: 5rem;">
+        <div class="case-filter-bar">
+          <button class="filter-btn case-filter-btn active" data-filter="all">All Case Studies</button>
+          <button class="filter-btn case-filter-btn" data-filter="fintech">FinTech</button>
+          <button class="filter-btn case-filter-btn" data-filter="saas">SaaS & Logistics</button>
+          <button class="filter-btn case-filter-btn" data-filter="healthcare">Healthcare</button>
+          <button class="filter-btn case-filter-btn" data-filter="bfsi">BFSI</button>
+        </div>
+
+        <div class="case-grid">
+          <div class="case-card case-card-item" data-cat="fintech">
+            <div class="case-meta">
+              <span class="case-client">PayStream Technologies</span>
+              <span class="badge">FinTech</span>
+            </div>
+            <h3>Scaling an Engineering Org from 50 to 200</h3>
+            <p>Rapidly closed 150+ senior Golang and React Native engineers to accelerate payments gateway launch across 4 international regions.</p>
+            <div class="case-metrics-banner">
+              <div class="case-metric">
+                <div class="c-val">-42%</div>
+                <div class="c-lbl">Time to Hire</div>
+              </div>
+              <div class="case-metric">
+                <div class="c-val">150+</div>
+                <div class="c-lbl">Hires Placed</div>
+              </div>
+              <div class="case-metric">
+                <div class="c-val">98%</div>
+                <div class="c-lbl">1-Yr Retention</div>
+              </div>
+            </div>
+            <a href="#" class="case-details-toggle open-case-modal" data-case-id="paystream">
+              Read Detailed Case Study →
+            </a>
+          </div>
+
+          <div class="case-card case-card-item" data-cat="saas">
+            <div class="case-meta">
+              <span class="case-client">CloudScale Logistics</span>
+              <span class="badge">SaaS & Supply Chain</span>
+            </div>
+            <h3>Microservices & Real-Time Tracking Cloud Rebuild</h3>
+            <p>Modernized a monolithic freight management system into an event-driven Kubernetes architecture with sub-second telemetry.</p>
+            <div class="case-metrics-banner">
+              <div class="case-metric">
+                <div class="c-val">4.2x</div>
+                <div class="c-lbl">Throughput</div>
+              </div>
+              <div class="case-metric">
+                <div class="c-val">-35%</div>
+                <div class="c-lbl">Cloud Costs</div>
+              </div>
+              <div class="case-metric">
+                <div class="c-val">99.99%</div>
+                <div class="c-lbl">System Uptime</div>
+              </div>
+            </div>
+            <a href="#" class="case-details-toggle open-case-modal" data-case-id="cloudscale">
+              Read Detailed Case Study →
+            </a>
+          </div>
+
+          <div class="case-card case-card-item" data-cat="healthcare">
+            <div class="case-meta">
+              <span class="case-client">HealthVault Care</span>
+              <span class="badge">HealthTech</span>
+            </div>
+            <h3>HIPAA Telemedicine & Diagnostics Platform</h3>
+            <p>Engineered an end-to-end encrypted WebRTC consultation portal and placed 35 certified biomedical software developers.</p>
+            <div class="case-metrics-banner">
+              <div class="case-metric">
+                <div class="c-val">4 Mos</div>
+                <div class="c-lbl">Time to Market</div>
+              </div>
+              <div class="case-metric">
+                <div class="c-val">25k+</div>
+                <div class="c-lbl">Daily Consults</div>
+              </div>
+              <div class="case-metric">
+                <div class="c-val">100%</div>
+                <div class="c-lbl">Security Score</div>
+              </div>
+            </div>
+            <a href="#" class="case-details-toggle open-case-modal" data-case-id="healthvault">
+              Read Detailed Case Study →
+            </a>
+          </div>
+
+          <div class="case-card case-card-item" data-cat="bfsi">
+            <div class="case-meta">
+              <span class="case-client">NeoBank Global</span>
+              <span class="badge">BFSI</span>
+            </div>
+            <h3>Next-Gen Core Banking API & Mobile Platform</h3>
+            <p>Built secure open-banking microservices connected to core ledgers and augmented 60+ senior cloud developers.</p>
+            <div class="case-metrics-banner">
+              <div class="case-metric">
+                <div class="c-val">&lt;45ms</div>
+                <div class="c-lbl">API Latency</div>
+              </div>
+              <div class="case-metric">
+                <div class="c-val">60+</div>
+                <div class="c-lbl">Staff Deployed</div>
+              </div>
+              <div class="case-metric">
+                <div class="c-val">1.8M</div>
+                <div class="c-lbl">Active Users</div>
+              </div>
+            </div>
+            <a href="#" class="case-details-toggle open-case-modal" data-case-id="neobank">
+              Read Detailed Case Study →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PAGE 8: CAREERS
+         ========================================================================== -->
+    <section class="page-section" id="page-careers">
+      <div class="page-hero">
+        <div class="container">
+          <div class="badge" style="margin-bottom: 1rem;"><span class="badge-dot"></span> Join the Nexus EDGE Team</div>
+          <h1>Build Your Career with <span class="gradient-text">Impact</span></h1>
+          <p>Work alongside visionary recruiters and exceptional engineers. Explore open roles across our consulting and engineering divisions.</p>
+        </div>
+      </div>
+
+      <div class="container" style="padding-bottom: 5rem;">
+        <div class="case-filter-bar">
+          <button class="filter-btn job-filter-btn active" data-dept="all">All Roles</button>
+          <button class="filter-btn job-filter-btn" data-dept="engineering">Engineering</button>
+          <button class="filter-btn job-filter-btn" data-dept="recruitment">Recruitment & Talent</button>
+          <button class="filter-btn job-filter-btn" data-dept="consulting">Consulting & HR</button>
+          <button class="filter-btn job-filter-btn" data-dept="sales">Sales & Accounts</button>
+        </div>
+
+        <div class="jobs-list">
+          <div class="job-card job-item-card" data-dept="engineering">
+            <div>
+              <h3 style="font-size: 1.25rem;">Lead Full-Stack Engineer (React / Node / Cloud)</h3>
+              <p style="font-size: 0.9rem; margin-top: 0.25rem;">Lead architecture and technical delivery of enterprise web applications for global clients.</p>
+              <div class="job-tags">
+                <span class="job-tag">Engineering</span>
+                <span class="job-tag">Bengaluru / Remote</span>
+                <span class="job-tag">Full-Time</span>
+                <span class="job-tag">₹28L - ₹42L</span>
+              </div>
+            </div>
+            <button class="btn btn-primary btn-sm apply-job-btn" data-job-title="Lead Full-Stack Engineer">Apply with Resume</button>
+          </div>
+
+          <div class="job-card job-item-card" data-dept="recruitment">
+            <div>
+              <h3 style="font-size: 1.25rem;">Senior Technical Recruiter (FinTech & Cloud)</h3>
+              <p style="font-size: 0.9rem; margin-top: 0.25rem;">Source, assess, and place high-caliber senior software architects and engineering leaders.</p>
+              <div class="job-tags">
+                <span class="job-tag">Recruitment</span>
+                <span class="job-tag">Mumbai (BKC) / Hybrid</span>
+                <span class="job-tag">Full-Time</span>
+                <span class="job-tag">₹12L - ₹18L + Incentives</span>
+              </div>
+            </div>
+            <button class="btn btn-primary btn-sm apply-job-btn" data-job-title="Senior Technical Recruiter">Apply with Resume</button>
+          </div>
+
+          <div class="job-card job-item-card" data-dept="engineering">
+            <div>
+              <h3 style="font-size: 1.25rem;">Senior DevOps & Kubernetes Architect</h3>
+              <p style="font-size: 0.9rem; margin-top: 0.25rem;">Design high-availability cloud infrastructure, IaC pipelines, and security automation on AWS/GCP.</p>
+              <div class="job-tags">
+                <span class="job-tag">Engineering</span>
+                <span class="job-tag">Hyderabad / Remote</span>
+                <span class="job-tag">Full-Time</span>
+                <span class="job-tag">₹25L - ₹38L</span>
+              </div>
+            </div>
+            <button class="btn btn-primary btn-sm apply-job-btn" data-job-title="Senior DevOps Architect">Apply with Resume</button>
+          </div>
+
+          <div class="job-card job-item-card" data-dept="sales">
+            <div>
+              <h3 style="font-size: 1.25rem;">Enterprise Account Executive - IT Services</h3>
+              <p style="font-size: 0.9rem; margin-top: 0.25rem;">Drive relationships with enterprise leadership across India for custom software and staffing solutions.</p>
+              <div class="job-tags">
+                <span class="job-tag">Sales</span>
+                <span class="job-tag">Mumbai / Bengaluru</span>
+                <span class="job-tag">Full-Time</span>
+                <span class="job-tag">₹18L - ₹30L + Uncapped Comm</span>
+              </div>
+            </div>
+            <button class="btn btn-primary btn-sm apply-job-btn" data-job-title="Enterprise Account Executive">Apply with Resume</button>
+          </div>
+
+          <div class="job-card job-item-card" data-dept="consulting">
+            <div>
+              <h3 style="font-size: 1.25rem;">HR Advisory Consultant - Total Rewards & Policy</h3>
+              <p style="font-size: 0.9rem; margin-top: 0.25rem;">Advise high-growth enterprises on compensation benchmarking, ESOP structuring, and talent retention.</p>
+              <div class="job-tags">
+                <span class="job-tag">Consulting</span>
+                <span class="job-tag">Mumbai / Hybrid</span>
+                <span class="job-tag">Full-Time</span>
+                <span class="job-tag">₹16L - ₹24L</span>
+              </div>
+            </div>
+            <button class="btn btn-primary btn-sm apply-job-btn" data-job-title="HR Advisory Consultant">Apply with Resume</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PAGE 9: BLOG & INSIGHTS
+         ========================================================================== -->
+    <section class="page-section" id="page-blog">
+      <div class="page-hero">
+        <div class="container">
+          <div class="badge" style="margin-bottom: 1rem;"><span class="badge-dot"></span> Thought Leadership</div>
+          <h1>Insights on <span class="gradient-text">Talent & Tech</span></h1>
+          <p>Perspectives from our recruitment leaders and software architects on the future of work and enterprise technology.</p>
+        </div>
+      </div>
+
+      <div class="container" style="padding-bottom: 5rem;">
+        <div style="background: linear-gradient(135deg, #0F172A, #06261A); border: 1px solid rgba(0,200,83,0.3); border-radius: var(--radius-xl); padding: 2.5rem; color: white; margin-bottom: 3.5rem; display: flex; flex-direction: column; gap: 1.5rem; box-shadow: 0 15px 35px rgba(0,0,0,0.3);">
+          <div class="badge" style="align-self: flex-start;"><span class="badge-dot"></span> Free Executive Report</div>
+          <div>
+            <h3 style="color: white; font-size: 1.6rem; margin-bottom: 0.5rem;">Download The 2026 Enterprise Tech Hiring & Architecture Report</h3>
+            <p style="color: #CBD5E1; font-size: 0.95rem; max-width: 700px;">Comprehensive benchmarks on engineer compensation, AI assessment frameworks, microservices migration pitfalls, and hybrid work retention data across 150+ companies.</p>
+          </div>
+          <form id="newsletter-form" style="display: flex; gap: 0.75rem; flex-wrap: wrap; max-width: 550px;">
+            <input type="email" class="form-control" placeholder="Enter work email..." required style="flex: 1; min-width: 240px; background: rgba(255,255,255,0.1); color: white; border-color: rgba(255,255,255,0.2);">
+            <button type="submit" class="btn btn-primary">Download Free PDF</button>
+          </form>
+        </div>
+
+        <div class="case-filter-bar">
+          <button class="filter-btn blog-filter-btn active" data-cat="all">All Articles</button>
+          <button class="filter-btn blog-filter-btn" data-cat="tech">Technology</button>
+          <button class="filter-btn blog-filter-btn" data-cat="consulting">Consulting & Hiring</button>
+          <button class="filter-btn blog-filter-btn" data-cat="engineering">Software Engineering</button>
+        </div>
+
+        <div class="blog-grid">
+          <div class="blog-card blog-card-item open-blog-modal" data-cat="tech" data-blog-id="tech-hiring-2026">
+            <div class="blog-banner-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M16 18l6-6-6-6"></path><path d="M8 6l-6 6 6 6"></path>
+              </svg>
+            </div>
+            <div class="blog-body">
+              <div class="blog-category">Technology & AI</div>
+              <h3>The 2026 Tech Hiring Playbook: Navigating AI, Compensation & Hybrid Models</h3>
+              <p>How leading tech companies evaluate real engineering talent in an era of automated code generators.</p>
+              <div class="blog-footer">
+                <span>February 2026</span>
+                <span>6 min read</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card blog-card-item open-blog-modal" data-cat="engineering" data-blog-id="monolith-microservices">
+            <div class="blog-banner-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <div class="blog-body">
+              <div class="blog-category">Software Development</div>
+              <h3>Monolith to Microservices: Architectural Lessons from 200+ Migrations</h3>
+              <p>Key anti-patterns to avoid when decoupling core enterprise databases and introducing event streaming.</p>
+              <div class="blog-footer">
+                <span>January 2026</span>
+                <span>8 min read</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card blog-card-item open-blog-modal" data-cat="consulting" data-blog-id="unified-consulting">
+            <div class="blog-banner-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <div class="blog-body">
+              <div class="blog-category">Consulting Strategy</div>
+              <h3>Why Traditional IT Staffing is Broken and How Unified Consulting Solves It</h3>
+              <p>Why fragmented vendors slow down enterprises and how unified consulting unlocks compounding velocity.</p>
+              <div class="blog-footer">
+                <span>December 2025</span>
+                <span>5 min read</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PAGE 10: CONTACT
+         ========================================================================== -->
+    <section class="page-section" id="page-contact">
+      <div class="page-hero">
+        <div class="container">
+          <div class="badge" style="margin-bottom: 1rem;"><span class="badge-dot"></span> Let's Connect</div>
+          <h1>Start a <span class="gradient-text">Conversation</span></h1>
+          <p>Whether you need to hire elite tech talent, ship scalable software, or explore an enterprise consulting partnership, our partners are ready to help.</p>
+        </div>
+      </div>
+
+      <div class="container" style="padding-bottom: 5rem;">
+        <div class="contact-grid">
+          <div class="contact-info-panel">
+            <span class="section-tag" style="color: var(--brand-green-500); font-family: var(--font-mono); font-weight: 700;">DIRECT ACCESS</span>
+            <h3 style="font-size: 1.8rem; margin: 0.5rem 0 1rem 0;">Get in Touch with Our Partners</h3>
+            <p style="font-size: 0.95rem; margin-bottom: 2rem;">We guarantee a response from a senior practice leader within 2 business hours.</p>
+
+            <div class="contact-card-list">
+              <div class="contact-channel">
+                <div class="contact-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div>
+                  <div style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600;">EMAIL US</div>
+                  <div style="font-weight: 700; font-size: 1rem; color: var(--text-primary);">hello@nexusedge.com</div>
+                  <div style="font-size: 0.8125rem; color: var(--text-secondary);">For sales: sales@nexusedge.com</div>
+                </div>
+              </div>
+
+              <div class="contact-channel">
+                <div class="contact-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div>
+                  <div style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600;">PHONE & WHATSAPP</div>
+                  <div style="font-weight: 700; font-size: 1rem; color: var(--text-primary);">+91 98765 43210</div>
+                  <div style="font-size: 0.8125rem; color: var(--text-secondary);">Board: +91 22 6789 0123</div>
+                </div>
+              </div>
+
+              <div class="contact-channel">
+                <div class="contact-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div>
+                  <div style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600;">HEADQUARTERS</div>
+                  <div style="font-weight: 700; font-size: 1rem; color: var(--text-primary);">Mumbai (BKC)</div>
+                  <div style="font-size: 0.8125rem; color: var(--text-secondary);">Level 12, Nexus Tower, Bandra Kurla Complex, Mumbai - 400051</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-box">
+            <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Send Us a Message</h3>
+            <form id="main-contact-form">
+              <div class="form-row two-col">
+                <div class="form-group">
+                  <label for="contact-name">Full Name *</label>
+                  <input type="text" id="contact-name" class="form-control" placeholder="e.g. Rahul Sharma" required>
+                </div>
+                <div class="form-group">
+                  <label for="contact-email">Work Email *</label>
+                  <input type="email" id="contact-email" class="form-control" placeholder="rahul@company.com" required>
+                </div>
+              </div>
+
+              <div class="form-row two-col">
+                <div class="form-group">
+                  <label for="contact-phone">Phone Number *</label>
+                  <input type="tel" id="contact-phone" class="form-control" placeholder="+91 98765 43210" required>
+                </div>
+                <div class="form-group">
+                  <label for="contact-company">Company Name</label>
+                  <input type="text" id="contact-company" class="form-control" placeholder="e.g. Acme FinTech">
+                </div>
+              </div>
+
+              <div class="form-group" style="margin-bottom: 1.25rem;">
+                <label for="contact-service">I am interested in *</label>
+                <select id="contact-service" class="form-control" required>
+                  <option value="" disabled selected>Select Primary Service</option>
+                  <option value="talent">Talent Hiring & Technical Recruitment</option>
+                  <option value="software">Custom Software & Product Development</option>
+                  <option value="staffing">Staff Augmentation & Dedicated Squads</option>
+                  <option value="cloud">Cloud Infrastructure & DevOps</option>
+                  <option value="rpo">Recruitment Process Outsourcing (RPO)</option>
+                  <option value="executive">Executive Search & Leadership</option>
+                </select>
+              </div>
+
+              <div class="form-group" style="margin-bottom: 1.5rem;">
+                <label for="contact-message">Project or Hiring Details *</label>
+                <textarea id="contact-message" class="form-control" placeholder="Tell us about the roles you need to fill or the software you plan to build..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Floating Action Button (FAB) for WhatsApp & Instant Callback -->
+  <div class="floating-fab-container">
+    <div class="fab-tooltip">Chat with Partner on WhatsApp</div>
+    <div class="fab-main-btn" id="fab-whatsapp-trigger" aria-label="Open WhatsApp Chat">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.03-1.25-.75-.67-1.26-1.5-1.41-1.75-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08 0 1.23.89 2.41 1.02 2.58.13.17 1.76 2.69 4.26 3.77.6.26 1.06.41 1.42.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.17-.48-.29z"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Global Modals
+       ========================================================================== -->
+
+  <!-- Modal 0: Hire Tech Talent Wizard -->
+  <div class="modal-overlay" id="hire-talent-modal">
+    <div class="modal-container">
+      <button class="modal-close-btn" aria-label="Close modal">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <h3 style="font-size: 1.45rem; margin-bottom: 1rem; font-family: var(--font-heading);">Hire Pre-Vetted Tech Talent</h3>
+
+      <form id="hire-talent-form">
+        <!-- Interactive Role Chips -->
+        <div class="form-group" style="margin-bottom: 0.85rem;">
+          <label>Target Specialization(s) *</label>
+          <div class="talent-chips-wrap" id="talent-role-chips">
+            <span class="talent-chip-item active" data-val="Full-Stack (React/Node)">Full-Stack (React/Node)</span>
+            <span class="talent-chip-item" data-val="Backend (Go/Java/Python)">Backend (Go/Java)</span>
+            <span class="talent-chip-item" data-val="Cloud & DevOps (AWS/K8s)">Cloud & DevOps</span>
+            <span class="talent-chip-item" data-val="AI / GenAI & ML">AI / GenAI & ML</span>
+            <span class="talent-chip-item" data-val="Mobile (iOS/Android/Flutter)">Mobile Apps</span>
+            <span class="talent-chip-item" data-val="Engineering Leadership">Tech Lead / CXO</span>
+          </div>
+          <input type="hidden" id="selected-talent-roles" value="Full-Stack (React/Node)">
+        </div>
+
+        <!-- 3-Column Selectors -->
+        <div class="form-row three-col">
+          <div class="form-group">
+            <label>Model *</label>
+            <select class="form-control" required>
+              <option value="staffing">Staff Augmentation</option>
+              <option value="permanent">Direct Placement</option>
+              <option value="c2h">Contract-to-Hire (C2H)</option>
+              <option value="pod">Autonomous Squad</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Team Size *</label>
+            <select class="form-control" required>
+              <option value="1">1 Engineer</option>
+              <option value="2-4" selected>2 - 4 Engineers</option>
+              <option value="5-10">5 - 10 Engineers</option>
+              <option value="pod">10+ Managed Pod</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Timeline *</label>
+            <select class="form-control" required>
+              <option value="immediate">Immediate (&lt; 7 Days)</option>
+              <option value="2weeks">Within 2 - 3 Weeks</option>
+              <option value="month">Within 1 - 2 Months</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Contact 2-Column Info -->
+        <div class="form-row two-col">
+          <div class="form-group">
+            <label>Your Name *</label>
+            <input type="text" class="form-control" placeholder="Jane Doe" required>
+          </div>
+          <div class="form-group">
+            <label>Work Email *</label>
+            <input type="email" class="form-control" placeholder="jane@company.com" required>
+          </div>
+        </div>
+
+        <div class="form-row two-col">
+          <div class="form-group">
+            <label>Phone / WhatsApp *</label>
+            <input type="tel" class="form-control" placeholder="+91 98765 43210" required>
+          </div>
+          <div class="form-group">
+            <label>Company Name *</label>
+            <input type="text" class="form-control" placeholder="Acme Technologies" required>
+          </div>
+        </div>
+
+        <div class="form-group" style="margin-bottom: 1.1rem;">
+          <label>Specific Tech Stack / Note (Optional)</label>
+          <textarea class="form-control" rows="3" style="min-height: 85px; resize: vertical;" placeholder="e.g. Senior Golang developers with Kubernetes, Kafka & AWS expertise..."></textarea>
+        </div>
+
+        <div style="display: flex; justify-content: center; margin-top: 1rem;">
+          <button type="submit" class="btn btn-primary btn-sm" style="padding: 0.6rem 2.5rem; font-size: 0.95rem; font-weight: 700; border-radius: var(--radius-sm);">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal 1: Book Consultation Wizard with Interactive Calendar Slot Picker -->
+  <div class="modal-overlay" id="consultation-modal">
+    <div class="modal-container">
+      <button class="modal-close-btn" aria-label="Close consultation modal">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div class="badge" style="margin-bottom: 0.75rem;"><span class="badge-dot"></span> Executive Discovery</div>
+      <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Schedule an Executive Consultation</h3>
+      <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.5rem;">Select your preferred meeting slot to schedule directly with our Practice Director.</p>
+      
+      <form id="consultation-form">
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label>Full Name *</label>
+          <input type="text" class="form-control" placeholder="Your Name" required>
+        </div>
+        <div class="form-row two-col">
+          <div class="form-group">
+            <label>Work Email *</label>
+            <input type="email" class="form-control" placeholder="name@company.com" required>
+          </div>
+          <div class="form-group">
+            <label>Phone *</label>
+            <input type="tel" class="form-control" placeholder="+91 98765 43210" required>
+          </div>
+        </div>
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label>Primary Focus Area *</label>
+          <select class="form-control" required>
+            <option value="talent">Technical Staffing & Executive Search</option>
+            <option value="software">Custom Software & Cloud Development</option>
+            <option value="hybrid">Both Talent & Software Engineering</option>
+          </select>
+        </div>
+
+        <!-- Interactive Calendar Time Slot Picker -->
+        <div class="form-group" style="margin-bottom: 1.5rem;">
+          <label>Select Available Time Slot (IST / GMT)</label>
+          <div class="calendar-slots-grid">
+            <button type="button" class="slot-btn active">Tomorrow 11:00 AM</button>
+            <button type="button" class="slot-btn">Tomorrow 02:30 PM</button>
+            <button type="button" class="slot-btn">Tomorrow 04:30 PM</button>
+            <button type="button" class="slot-btn">Friday 11:30 AM</button>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Confirm Consultation Call (.ics)</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal 3: Case Study Deep Dive -->
+  <div class="modal-overlay" id="case-study-modal">
+    <div class="modal-container">
+      <button class="modal-close-btn" aria-label="Close case study modal">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div class="badge" id="modal-case-client" style="margin-bottom: 0.75rem;">Client</div>
+      <h3 id="modal-case-title" style="font-size: 1.5rem; margin-bottom: 1rem;">Case Study Title</h3>
+      <div id="modal-case-body"></div>
+    </div>
+  </div>
+
+  <!-- Modal 4: Job Application Modal with Drag & Drop Resume -->
+  <div class="modal-overlay" id="job-apply-modal">
+    <div class="modal-container">
+      <button class="modal-close-btn" aria-label="Close job application modal">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div class="badge" style="margin-bottom: 0.75rem;">Careers at Nexus EDGE</div>
+      <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Apply for Position</h3>
+      <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 1.25rem;">Submit your details and portfolio/resume to our recruitment squad.</p>
+
+      <form id="job-apply-form">
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label>Applying For *</label>
+          <input type="text" id="apply-role-input" class="form-control" readonly style="font-weight: 600; background: var(--bg-subtle);">
+        </div>
+        <div class="form-row two-col">
+          <div class="form-group">
+            <label>Full Name *</label>
+            <input type="text" class="form-control" required placeholder="Your Name">
+          </div>
+          <div class="form-group">
+            <label>Email *</label>
+            <input type="email" class="form-control" required placeholder="you@email.com">
+          </div>
+        </div>
+        <div class="form-row two-col">
+          <div class="form-group">
+            <label>Phone *</label>
+            <input type="tel" class="form-control" required placeholder="+91 98765 43210">
+          </div>
+          <div class="form-group">
+            <label>LinkedIn / Portfolio URL *</label>
+            <input type="url" class="form-control" required placeholder="https://linkedin.com/in/...">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Attach Resume (PDF / DOCX)</label>
+          <div class="file-drop-area" id="resume-drop-area">
+            <svg style="margin: 0 auto 0.5rem auto; color: var(--brand-green-500);" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="17 8 12 3 7 8"></polyline>
+              <line x1="12" y1="3" x2="12" y2="15"></line>
+            </svg>
+            <div style="font-weight: 600; font-size: 0.9rem;">Drag & drop your resume here, or <span style="color: var(--brand-green-500); text-decoration: underline;">browse files</span></div>
+            <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.25rem;">Supported formats: .pdf, .docx (Max 10MB)</div>
+            <input type="file" id="resume-file-input" style="display: none;" accept=".pdf,.docx,.doc">
+            <div id="file-upload-status"></div>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Submit Application</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal 5: Blog Article Reader -->
+  <div class="modal-overlay" id="blog-read-modal">
+    <div class="modal-container" style="max-width: 720px;">
+      <button class="modal-close-btn" aria-label="Close article modal">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div id="modal-blog-meta" style="font-size: 0.8125rem; font-weight: 700; color: var(--brand-green-500); margin-bottom: 0.5rem; text-transform: uppercase;">Category & Date</div>
+      <h2 id="modal-blog-title" style="font-size: 1.85rem; margin-bottom: 1.5rem; line-height: 1.3;">Article Title</h2>
+      <div id="modal-blog-body" style="font-size: 1rem; color: var(--text-secondary); line-height: 1.8;"></div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo-wrap">
+            <img src="assets/logo.svg" class="brand-logo-img" alt="Nexus EDGE" draggable="false">
+          </div>
+          <p>Nexus EDGE is an enterprise consulting and IT services partner helping organizations hire elite talent and engineer high-impact software.</p>
+          <div style="font-size: 0.8125rem; color: #CBD5E1;">
+            📍 Level 12, Nexus Tower, Bandra Kurla Complex, Mumbai - 400051
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Talent Solutions</h5>
+          <div class="footer-links">
+            <a href="#services" data-route="services">Permanent Recruitment</a>
+            <a href="#services" data-route="services">Executive Search</a>
+            <a href="#services" data-route="services">IT Staff Augmentation</a>
+            <a href="#services" data-route="services">Recruitment Process (RPO)</a>
+            <a href="#services" data-route="services">Campus Hiring Drives</a>
+            <a href="#services" data-route="services">HR Advisory & ESOPs</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>IT Engineering</h5>
+          <div class="footer-links">
+            <a href="#services" data-route="services">Custom Web & SaaS</a>
+            <a href="#services" data-route="services">Mobile Applications</a>
+            <a href="#services" data-route="services">Cloud & Kubernetes</a>
+            <a href="#services" data-route="services">Legacy Modernization</a>
+            <a href="#services" data-route="services">Dedicated Squads</a>
+            <a href="#services" data-route="services">QA & Test Automation</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Company & Connect</h5>
+          <div class="footer-links">
+            <a href="#about" data-route="about">About Nexus EDGE</a>
+            <a href="#industries" data-route="industries">Industries Served</a>
+            <a href="#why-us" data-route="why-us">Why Choose Us</a>
+            <a href="#process" data-route="process">Our 11-Step Process</a>
+            <a href="#case-studies" data-route="case-studies">Case Studies</a>
+            <a href="#careers" data-route="careers">Careers & Open Roles</a>
+            <a href="#blog" data-route="blog">Insights & Blog</a>
+            <a href="#contact" data-route="contact">Contact Our Team</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Nexus EDGE Consulting & IT Services. All rights reserved.</div>
+        <div class="cert-badges">
+          <span class="cert-tag" title="Click to view ISO 27001 info">ISO 27001 Certified</span>
+          <span class="cert-tag" title="Click to view SOC 2 Type II info">SOC 2 Type II</span>
+          <span class="cert-tag" title="Click to view GDPR compliance">GDPR Ready</span>
+          <span class="cert-tag" title="5 Regional Technology Centers">Pan-India Delivery</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== Scroll to Top Button ===================== -->
+  <button id="scroll-top-btn" aria-label="Scroll to top of page" title="Back to Top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
+
+  <!-- ===================== Cookie Consent Banner ===================== -->
+  <div id="cookie-banner" role="dialog" aria-label="Cookie Consent">
+    <div class="cookie-text">
+      <strong>We value your privacy.</strong> We use cookies to enhance your browsing experience, serve personalised content, and analyse traffic.
+      By clicking <em>Accept</em> you consent to our use of cookies.
+      <a href="#" onclick="return false;" aria-label="Cookie policy">Learn more</a>
+    </div>
+    <div class="cookie-actions">
+      <button class="cookie-btn-decline" id="cookie-decline">Decline</button>
+      <button class="cookie-btn-accept" id="cookie-accept">Accept All</button>
+    </div>
+  </div>
+
+  <!-- Application Script -->
+  <script src="js/app.js"></script>
+</body>
+</html>

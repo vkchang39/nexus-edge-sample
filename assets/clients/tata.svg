@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" fill="none">
+  <path d="M15 12 L15 15 L22 15 L22 28 L26 28 L26 15 L33 15 L33 12 Z" fill="#0072CE"/>
+  <path d="M36 28 L40 28 L46 12 L42 12 L38 23 L34 12 L30 12 Z" fill="#0072CE"/>
+  <path d="M48 12 L48 15 L55 15 L55 28 L59 28 L59 15 L66 15 L66 12 Z" fill="#0072CE"/>
+  <path d="M69 28 L73 28 L79 12 L75 12 L71 23 L67 12 L63 12 Z" fill="#0072CE"/>
+  <text x="84" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800" fill="#0072CE" letter-spacing="1">GROUP</text>
+</svg>

@@ -97,7 +97,20 @@ function initHeroParticles() {
     mouse.y = e.clientY - rect.top;
   });
 
+  let isHeroVisible = true;
+  const heroSection = document.querySelector('.hero-section');
+  if (heroSection && 'IntersectionObserver' in window) {
+    const heroObserver = new IntersectionObserver((entries) => {
+      isHeroVisible = entries[0].isIntersecting;
+      if (isHeroVisible) {
+        requestAnimationFrame(render);
+      }
+    }, { threshold: 0.05 });
+    heroObserver.observe(heroSection);
+  }
+
   function render() {
+    if (!isHeroVisible) return;
     ctx.clearRect(0, 0, width, height);
 
     for (let i = 0; i < particles.length; i++) {
@@ -113,16 +126,16 @@ function initHeroParticles() {
       const dym = mouse.y - p.y;
       const distMouse = Math.sqrt(dxm * dxm + dym * dym);
       if (distMouse < 120) {
-        p.x += dxm * 0.015;
-        p.y += dym * 0.015;
+        p.x += (mouse.x - p.x) * 0.01;
+        p.y += (mouse.y - p.y) * 0.01;
       }
 
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-      ctx.fillStyle = 'rgba(0, 200, 83, 0.45)';
+      ctx.fillStyle = 'rgba(0, 200, 83, 0.4)';
       ctx.fill();
 
-      // Connect lines
+      // Connect near particles
       for (let j = i + 1; j < particles.length; j++) {
         const p2 = particles[j];
         const dx = p.x - p2.x;
@@ -140,7 +153,9 @@ function initHeroParticles() {
       }
     }
 
-    requestAnimationFrame(render);
+    if (isHeroVisible) {
+      requestAnimationFrame(render);
+    }
   }
 
   render();
@@ -1683,11 +1698,16 @@ function initHorizontalProcessTrack() {
   const cols = track.querySelectorAll('.proc-step-col');
   const totalSteps = cols.length;
   let currentActiveIndex = 0;
+  let isDragging = false;
+  let userInteractionTimer = null;
+  let targetScrollLeft = 0;
+  let isScrollLoopRunning = false;
 
   // Function to update active/passed glow states on cols and nodes
   function setActiveStep(index, smoothScrollTrack = true) {
     if (index < 0) index = 0;
     if (index >= totalSteps) index = totalSteps - 1;
+    if (index === currentActiveIndex && !smoothScrollTrack) return;
     currentActiveIndex = index;
 
     cols.forEach((col, i) => {
@@ -1716,54 +1736,79 @@ function initHorizontalProcessTrack() {
       stepLabel.textContent = `STEP 0${index + 1} OF ${totalSteps}: ${cardTitle}`.replace('010', '10').replace('011', '11');
     }
 
-    // Scroll viewport to show active column
+    // Scroll viewport to show active column with smooth spring interpolation
     if (smoothScrollTrack && activeCol) {
       const colLeft = activeCol.offsetLeft - track.offsetLeft;
-      const targetScroll = colLeft - (viewport.clientWidth / 2) + (activeCol.offsetWidth / 2);
-      viewport.scrollTo({
-        left: Math.max(0, targetScroll),
-        behavior: 'smooth'
-      });
+      const target = colLeft - (viewport.clientWidth / 2) + (activeCol.offsetWidth / 2);
+      smoothScrollTo(target);
+    }
+  }
+
+  // Smooth 60fps spring interpolation loop for track scrolling
+  function smoothScrollTo(target) {
+    targetScrollLeft = Math.max(0, Math.min(target, viewport.scrollWidth - viewport.clientWidth));
+    if (!isScrollLoopRunning) {
+      isScrollLoopRunning = true;
+      requestAnimationFrame(runSpringScroll);
+    }
+  }
+
+  function runSpringScroll() {
+    if (isDragging) {
+      isScrollLoopRunning = false;
+      return;
+    }
+    const current = viewport.scrollLeft;
+    const diff = targetScrollLeft - current;
+
+    if (Math.abs(diff) > 0.75) {
+      viewport.scrollLeft = current + diff * 0.18;
+      requestAnimationFrame(runSpringScroll);
+    } else {
+      viewport.scrollLeft = targetScrollLeft;
+      isScrollLoopRunning = false;
     }
   }
 
   // 1. Page Scroll Synchronization:
   // As the user scrolls vertically through the process section on the homepage,
-  // translate the horizontal track and illuminate steps 1 through 11 sequentially!
-  let ticking = false;
+  // translate the horizontal track smoothly without layout reflows or stutter.
+  let isScrollTicking = false;
   window.addEventListener('scroll', () => {
-    if (!ticking) {
+    if (isDragging || userInteractionTimer) return;
+    if (!isScrollTicking) {
       window.requestAnimationFrame(() => {
         const rect = section.getBoundingClientRect();
         const windowHeight = window.innerHeight || document.documentElement.clientHeight;
 
         // When the section is within viewport
-        if (rect.top <= windowHeight * 0.75 && rect.bottom >= windowHeight * 0.25) {
-          const totalDistance = windowHeight * 0.5 + rect.height;
-          const currentDistance = (windowHeight * 0.75) - rect.top;
+        if (rect.top <= windowHeight * 0.8 && rect.bottom >= windowHeight * 0.2) {
+          const totalDistance = windowHeight * 0.6 + rect.height;
+          const currentDistance = (windowHeight * 0.8) - rect.top;
           const scrollFraction = Math.max(0, Math.min(1, currentDistance / totalDistance));
 
           // Calculate active step (0 to 10)
           const targetIndex = Math.min(totalSteps - 1, Math.floor(scrollFraction * totalSteps));
 
-          // Translate horizontal scroll viewport
+          // Translate horizontal scroll viewport smoothly
           const maxScroll = viewport.scrollWidth - viewport.clientWidth;
           if (maxScroll > 0) {
-            viewport.scrollLeft = scrollFraction * maxScroll;
+            smoothScrollTo(scrollFraction * maxScroll);
           }
 
           if (targetIndex !== currentActiveIndex) {
             setActiveStep(targetIndex, false);
           }
         }
-        ticking = false;
+        isScrollTicking = false;
       });
-      ticking = true;
+      isScrollTicking = true;
     }
   }, { passive: true });
 
   // 2. Viewport Scroll Listener for manual drag/touch:
   viewport.addEventListener('scroll', () => {
+    if (isScrollLoopRunning) return; // Only process when user is manually scrolling/dragging
     const scrollLeft = viewport.scrollLeft;
     const viewportCenter = scrollLeft + (viewport.clientWidth / 2);
 
@@ -1787,12 +1832,14 @@ function initHorizontalProcessTrack() {
   // 3. Previous / Next Button Controls
   if (prevBtn) {
     prevBtn.addEventListener('click', () => {
+      setUserInteracting();
       setActiveStep(currentActiveIndex - 1, true);
     });
   }
 
   if (nextBtn) {
     nextBtn.addEventListener('click', () => {
+      setUserInteracting();
       setActiveStep(currentActiveIndex + 1, true);
     });
   }
@@ -1800,30 +1847,39 @@ function initHorizontalProcessTrack() {
   // 4. Click to Focus any Column / Node / Card
   cols.forEach((col, idx) => {
     col.addEventListener('click', () => {
+      setUserInteracting();
       setActiveStep(idx, true);
     });
   });
 
+  function setUserInteracting() {
+    if (userInteractionTimer) clearTimeout(userInteractionTimer);
+    userInteractionTimer = setTimeout(() => {
+      userInteractionTimer = null;
+    }, 1200);
+  }
+
   // 5. Mouse Drag-to-Scroll support
-  let isDown = false;
   let startX;
   let startScrollLeft;
 
   viewport.addEventListener('mousedown', (e) => {
-    isDown = true;
+    isDragging = true;
     startX = e.pageX - viewport.offsetLeft;
     startScrollLeft = viewport.scrollLeft;
+    setUserInteracting();
   });
 
-  viewport.addEventListener('mouseleave', () => { isDown = false; });
-  viewport.addEventListener('mouseup', () => { isDown = false; });
+  window.addEventListener('mouseleave', () => { isDragging = false; });
+  window.addEventListener('mouseup', () => { isDragging = false; });
 
   viewport.addEventListener('mousemove', (e) => {
-    if (!isDown) return;
+    if (!isDragging) return;
     e.preventDefault();
     const x = e.pageX - viewport.offsetLeft;
     const walk = (x - startX) * 1.5;
     viewport.scrollLeft = startScrollLeft - walk;
+    setUserInteracting();
   });
 
   // Initial state setup

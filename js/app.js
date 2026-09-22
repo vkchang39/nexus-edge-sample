@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initServicesCarousel();
   initAppinventivIndustryFilter();
   initHorizontalProcessTrack();
+  initStitchTestimonialsSlider();
   registerServiceWorker();
 });
 
@@ -253,16 +254,9 @@ function navigateTo(routeName) {
   const isHomeActive = document.getElementById('page-home') && document.getElementById('page-home').classList.contains('active');
   
   if (routeName === 'process' && isHomeActive) {
-    const homeProcess = document.getElementById('process-section');
+    const homeProcess = document.getElementById('home-lifecycle-section') || document.getElementById('process-section');
     if (homeProcess) {
       homeProcess.scrollIntoView({ behavior: 'smooth' });
-      return;
-    }
-  }
-  if (routeName === 'about' && isHomeActive) {
-    const homeAbout = document.getElementById('home-about');
-    if (homeAbout) {
-      homeAbout.scrollIntoView({ behavior: 'smooth' });
       return;
     }
   }
@@ -1824,6 +1818,57 @@ function initHorizontalProcessTrack() {
   // Initial state setup
   setActiveStep(0, false);
 }
+
+/* ==========================================================================
+   Stitch Testimonials Slider Implementation
+   ========================================================================== */
+function initStitchTestimonialsSlider() {
+  const track = document.getElementById('stitch-testimonials-track');
+  const prevBtn = document.getElementById('stitch-test-prev-btn');
+  const nextBtn = document.getElementById('stitch-test-next-btn');
+  if (!track || !prevBtn || !nextBtn) return;
+
+  const cards = track.querySelectorAll('.stitch-testimonial-card');
+  if (!cards.length) return;
+  let currentIndex = 0;
+
+  function getVisibleCardsCount() {
+    if (window.innerWidth > 1024) return 3;
+    if (window.innerWidth > 640) return 2;
+    return 1;
+  }
+
+  function updateSlider() {
+    const visibleCount = getVisibleCardsCount();
+    const maxIndex = Math.max(0, cards.length - visibleCount);
+    currentIndex = Math.max(0, Math.min(currentIndex, maxIndex));
+    const cardWidth = cards[0].offsetWidth;
+    const gap = 32; // 2rem gap
+    const offset = currentIndex * (cardWidth + gap);
+    track.style.transform = `translateX(-${offset}px)`;
+
+    prevBtn.style.opacity = currentIndex === 0 ? '0.4' : '1';
+    prevBtn.style.pointerEvents = currentIndex === 0 ? 'none' : 'auto';
+    nextBtn.style.opacity = currentIndex >= maxIndex ? '0.4' : '1';
+    nextBtn.style.pointerEvents = currentIndex >= maxIndex ? 'none' : 'auto';
+  }
+
+  prevBtn.addEventListener('click', () => {
+    currentIndex = Math.max(0, currentIndex - 1);
+    updateSlider();
+  });
+
+  nextBtn.addEventListener('click', () => {
+    const visibleCount = getVisibleCardsCount();
+    const maxIndex = Math.max(0, cards.length - visibleCount);
+    currentIndex = Math.min(maxIndex, currentIndex + 1);
+    updateSlider();
+  });
+
+  window.addEventListener('resize', updateSlider);
+  updateSlider();
+}
+
 
 
 
